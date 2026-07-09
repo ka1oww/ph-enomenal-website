@@ -1,0 +1,68 @@
+{
+  "commonSolutions": [
+    { "role": "acidic", "solution": "White vinegar", "approxPh": 2.5 },
+    { "role": "neutral", "solution": "Distilled water", "approxPh": 7.0 },
+    { "role": "alkaline", "solution": "Baking soda solution", "approxPh": 8.5 }
+  ],
+  "individual": {
+    "cabbage": {
+      "member": "Yue Peiyu",
+      "plant": "Red cabbage",
+      "pigment": "Anthocyanins",
+      "points": [
+        { "ph": 2, "colourName": "crimson red", "rgb": [199, 32, 62] },
+        { "ph": 4, "colourName": "pink-magenta", "rgb": [190, 62, 120] },
+        { "ph": 6, "colourName": "purple", "rgb": [140, 70, 150] },
+        { "ph": 7, "colourName": "violet-blue", "rgb": [102, 92, 168] },
+        { "ph": 9, "colourName": "blue", "rgb": [62, 110, 180] },
+        { "ph": 11, "colourName": "teal", "rgb": [40, 150, 148] },
+        { "ph": 13, "colourName": "green-yellow", "rgb": [150, 188, 82] }
+      ]
+    },
+    "turmeric": {
+      "member": "Song Kang Jun",
+      "plant": "Turmeric",
+      "pigment": "Curcumin",
+      "points": [
+        { "ph": 2, "colourName": "yellow", "rgb": [232, 200, 40] },
+        { "ph": 4, "colourName": "yellow", "rgb": [230, 198, 42] },
+        { "ph": 7, "colourName": "yellow", "rgb": [226, 190, 44] },
+        { "ph": 8, "colourName": "yellow-orange", "rgb": [224, 160, 42] },
+        { "ph": 9, "colourName": "orange-red", "rgb": [200, 92, 40] },
+        { "ph": 11, "colourName": "red-brown", "rgb": [162, 52, 40] },
+        { "ph": 13, "colourName": "deep red-brown", "rgb": [148, 40, 38] }
+      ]
+    },
+    "beetroot": {
+      "member": "Josiah Soh En Len",
+      "plant": "Beetroot",
+      "pigment": "Betalains (betanin)",
+      "points": [
+        { "ph": 2, "colourName": "red", "rgb": [190, 40, 70] },
+        { "ph": 4, "colourName": "magenta-pink", "rgb": [200, 50, 110] },
+        { "ph": 6, "colourName": "magenta", "rgb": [192, 46, 116] },
+        { "ph": 7, "colourName": "magenta", "rgb": [185, 45, 120] },
+        { "ph": 9, "colourName": "dull purple", "rgb": [150, 62, 118] },
+        { "ph": 11, "colourName": "brown-purple", "rgb": [140, 92, 82] },
+        { "ph": 13, "colourName": "yellow-brown", "rgb": [172, 150, 72] }
+      ]
+    }
+  },
+  "mixture": {
+    "ratioLabel": "red cabbage : turmeric : beetroot = 3 : 1 : 1",
+    "ratioTested": [
+      { "ratio": "1 : 1 : 1", "verdict": "muddier mid-range separation" },
+      { "ratio": "2 : 1 : 1", "verdict": "muddier mid-range separation" },
+      { "ratio": "3 : 1 : 1", "verdict": "cleanest distinct bands across all three pH regions (winner)" }
+    ],
+    "points": [
+      { "ph": 1, "band": "strong acid", "colourName": "red", "rgb": [205, 30, 55] },
+      { "ph": 3, "band": "strong/weak acid", "colourName": "rose-pink", "rgb": [196, 58, 104] },
+      { "ph": 5, "band": "weak acid", "colourName": "purple-magenta", "rgb": [158, 66, 138] },
+      { "ph": 7, "band": "neutral", "colourName": "violet", "rgb": [110, 92, 165] },
+      { "ph": 9, "band": "weak alkali", "colourName": "blue", "rgb": [66, 116, 176] },
+      { "ph": 11, "band": "strong alkali", "colourName": "teal-green", "rgb": [44, 152, 138] },
+      { "ph": 13, "band": "strong alkali", "colourName": "olive-yellow", "rgb": [150, 180, 84] }
+    ]
+  }
+}

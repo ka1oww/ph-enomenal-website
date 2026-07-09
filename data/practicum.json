@@ -1,0 +1,49 @@
+{
+  "unknowns": [
+    {
+      "id": "U1",
+      "identity": "Lemon juice",
+      "observedColour": "red",
+      "rgb": [203, 34, 58],
+      "estimatedPh": "~2",
+      "classification": "Strong acid",
+      "image": "assets/practicum-U1.jpg"
+    },
+    {
+      "id": "U2",
+      "identity": "Black coffee",
+      "observedColour": "rose-pink",
+      "rgb": [190, 70, 110],
+      "estimatedPh": "~5",
+      "classification": "Weak acid",
+      "image": "assets/practicum-U2.jpg"
+    },
+    {
+      "id": "U3",
+      "identity": "Salt water",
+      "observedColour": "violet",
+      "rgb": [112, 94, 162],
+      "estimatedPh": "~7",
+      "classification": "Neutral",
+      "image": "assets/practicum-U3.jpg"
+    },
+    {
+      "id": "U4",
+      "identity": "Baking soda solution",
+      "observedColour": "blue",
+      "rgb": [70, 118, 174],
+      "estimatedPh": "~9",
+      "classification": "Weak alkali",
+      "image": "assets/practicum-U4.jpg"
+    },
+    {
+      "id": "U5",
+      "identity": "Dilute ammonia (cleaner)",
+      "observedColour": "teal-green",
+      "rgb": [46, 150, 140],
+      "estimatedPh": "~12",
+      "classification": "Strong alkali",
+      "image": "assets/practicum-U5.jpg"
+    }
+  ]
+}

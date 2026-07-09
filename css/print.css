@@ -1,0 +1,33 @@
+/* print.css — used only when printing / saving to PDF, isolates the colour
+   reference card so it prints as a clean, standalone reference strip. */
+
+@media print {
+  @page { margin: 1.2cm; }
+
+  body * { visibility: hidden; }
+
+  #reference, #reference * { visibility: visible; }
+
+  #reference {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .site-header, .site-footer, .hero, .no-print { display: none !important; }
+
+  .reference-card {
+    box-shadow: none;
+    border: 1px solid #999;
+  }
+
+  .ladder-block {
+    break-inside: avoid;
+  }
+
+  .ladder-block__swatch {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

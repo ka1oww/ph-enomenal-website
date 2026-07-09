@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "title": "pH-enomenal Chemistry",
+    "themeLine": "Nature's Colours: a broad-range natural pH indicator",
+    "scrollCue": "Scroll to explore"
+  },
+  "introduction": {
+    "heading": "Introduction",
+    "paragraphs": [
+      "An indicator is a substance that changes colour depending on whether a solution is acidic, neutral or alkaline. This is because the indicator reacts with the hydrogen ions in acids, or with the hydroxide ions in alkalis, and this changes its structure slightly. A different structure absorbs light differently, so we see a different colour. Common indicators like litmus and phenolphthalein are man-made, and they usually only change colour once, at one point on the pH scale. Many plant pigments can do the same job. Anthocyanins, the pigments in red cabbage, are special because they change colour gradually across almost the whole pH scale, not just once.",
+      "For our project, we wanted to make our own natural pH indicator using things found at home: red cabbage, turmeric and beetroot. Our aim was to make an indicator that could cover the full pH range, from very acidic to very alkaline, with colour changes clear enough that we could use the colour to estimate the pH of an unknown solution. We tested each plant pigment on its own first, then combined and adjusted them as a group."
+    ],
+    "literatureCardsHeading": "Literature review"
+  },
+  "science": {
+    "heading": "The Science",
+    "subheading": "Why the colour changes",
+    "explainer": [
+      "Red cabbage gets its colour from pigments called <strong>anthocyanins</strong>. These pigment molecules gain or lose hydrogen ions (H<sup>+</sup>) depending on how acidic or alkaline the solution is. When the molecule gains or loses a hydrogen ion, its structure changes a little. A molecule with a different structure absorbs a different colour of light, and that is why we see the colour change.",
+      "As the pH goes up from very acidic to very alkaline, red cabbage extract changes smoothly through red, pink, purple, blue, teal and green-yellow. Because this colour change happens smoothly across almost the whole pH scale, we used red cabbage as the main pigment in our indicator. We added turmeric and beetroot on top of it to make specific parts of the scale easier to tell apart."
+    ]
+  },
+  "groupOptimisation": {
+    "heading": "Group Optimisation",
+    "narrative": [
+      "Each pigment on its own has a weakness. Red cabbage covers the whole pH range, but the colour changes slowly in the middle, so it is hard to tell the exact pH between about pH 6 and 9. Turmeric stays yellow across the whole acidic-to-neutral range and is only useful above pH 8. Beetroot barely changes colour at all, until it breaks down in strong alkali. We mixed the three pigments together so that each one could cover for the others' weaknesses.",
+      "We tested three different mixing ratios of red cabbage to turmeric to beetroot: 1:1:1, 2:1:1 and 3:1:1. Both 1:1:1 and 2:1:1 gave muddier colours in the middle of the pH range, because the turmeric and beetroot made the cabbage's clear colour changes harder to see, without adding enough of their own colour change to make up for it. The 3:1:1 ratio worked best. It keeps red cabbage as the main pigment, with just enough turmeric to make the alkaline colours clearer, giving the clearest colour bands across acidic, neutral and alkaline solutions.",
+      "This 3:1:1 mixture is what we used for the rest of this site: the pH slider, the reference card and the AI pH Estimator are all based on this same set of colours."
+    ]
+  },
+  "discussion": {
+    "heading": "Discussion and Conclusion",
+    "synthesis": "Our optimised 3:1:1 mix correctly identified all five unknown solutions in our Live Lab Practicum, from strong acid to strong alkali. This supports our main idea: a natural indicator, carefully optimised instead of just mixed randomly, can work as well as a man-made broad-range indicator. It does this while staying cheap, safe and made from things found at home.",
+    "strengths": [
+      "Wide, visible colour range across almost the whole pH 1-13 scale.",
+      "Cheap, safe and made entirely from things found at home.",
+      "Correctly identified all five unknown solutions in our practicum, from strong acid to strong alkali."
+    ],
+    "limitations": [
+      "It is hard to tell weak acid from strong acid, or weak alkali from strong alkali, because the colour difference is small and hard to judge by eye.",
+      "Colour readings depend on lighting and camera settings, which affects both what we see and what the AI estimator sees.",
+      "The beetroot part of the mixture breaks down under heat, light and strong alkali, so it is the least reliable of the three pigments over time.",
+      "Our indicator can only give an estimated pH range, not an exact pH value. It cannot replace a proper pH meter."
+    ],
+    "recommendations": [
+      "Use the same lighting (for example, a fixed lightbox) every time the indicator's colour is read, whether by eye or with the AI estimator.",
+      "Use the same extraction method and steeping time every time, since how much pigment is in the extract affects how strong the colour looks.",
+      "Try adding a fourth pigment, or replacing beetroot, to fix the weak colour separation around pH 5-6.",
+      "Set up the AI estimator separately for each camera or device, since cameras can show colours slightly differently."
+    ]
+  },
+  "aboutBuild": "This site is the maximum-AI arm of a class experiment comparing AI-assisted and human-produced coursework. The dataset throughout is illustrative and AI-generated for the demo, grounded in real indicator chemistry. It is not real laboratory data."
+}

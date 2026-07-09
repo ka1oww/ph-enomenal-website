@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>pH-enomenal Chemistry: The pH-natics</title>
+<meta name="description" content="An interactive investigation into a broad-range natural pH indicator built from red cabbage, turmeric and beetroot." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/print.css" media="print" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="nav__brand" href="#top"><span id="navGroupName">The pH-natics</span></a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#science">The Science</a></li>
+      <li><a href="#optimisation">Optimisation</a></li>
+      <li><a href="#reference">Reference Card</a></li>
+      <li><a href="#practicum">Practicum</a></li>
+      <li><a href="#estimator">AI Estimator</a></li>
+      <li><a href="#discussion">Discussion</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- 5.0 Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow" id="heroGroupName">The pH-natics</p>
+      <h1 class="hero__title" id="heroTitle">pH-enomenal Chemistry</h1>
+      <p class="hero__theme" id="heroTheme">Nature's Colours: a broad-range natural pH indicator</p>
+      <ul class="hero__members" id="heroMembers"></ul>
+      <div class="hero__thumb" aria-hidden="true">
+        <div class="hero__thumb-swatch" id="heroSwatch"></div>
+        <div class="hero__thumb-marker" id="heroThumbMarker"></div>
+      </div>
+      <a class="hero__scroll" href="#introduction">
+        <span id="heroScrollCue">Scroll to explore</span>
+        <span class="hero__scroll-arrow" aria-hidden="true">&darr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 5.1 Introduction -->
+  <section id="introduction" class="section reveal">
+    <div class="section__inner">
+      <h2 class="section__heading">Introduction</h2>
+      <div class="prose" id="introParagraphs"></div>
+
+      <h3 class="section__subheading" id="literatureCardsHeading">Literature review</h3>
+      <div class="lit-grid" id="literatureCards"></div>
+    </div>
+  </section>
+
+  <!-- 5.2 The Science -->
+  <section id="science" class="section reveal">
+    <div class="section__inner">
+      <h2 class="section__heading">The Science</h2>
+      <div class="science-grid">
+        <div class="science-slider-card">
+          <div class="swatch-large" id="sliderSwatch" aria-hidden="true"></div>
+          <div class="slider-readout">
+            <div class="slider-readout__ph" id="sliderPhValue">pH 7.0</div>
+            <div class="slider-readout__band" id="sliderBand">neutral</div>
+            <div class="slider-readout__codes">
+              <span class="mono" id="sliderHex">#000000</span>
+              <span class="mono" id="sliderRgb">rgb(0, 0, 0)</span>
+            </div>
+          </div>
+          <label class="slider-label" for="phSlider">Drag to change pH</label>
+          <input type="range" id="phSlider" min="0" max="14" step="0.1" value="7" />
+          <div class="slider-scale-labels">
+            <span>0</span><span>7</span><span>14</span>
+          </div>
+        </div>
+        <div class="science-explainer">
+          <h3 class="science-explainer__subheading" id="scienceSubheading">Why the colour changes</h3>
+          <div class="prose" id="scienceExplainer"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.4 Group optimisation -->
+  <section id="optimisation" class="section reveal">
+    <div class="section__inner">
+      <h2 class="section__heading">Group Optimisation</h2>
+      <div class="prose" id="optimisationNarrative"></div>
+
+      <h3 class="section__subheading">Mixing ratios tested</h3>
+      <div class="ratio-grid" id="ratioComparison"></div>
+    </div>
+  </section>
+
+  <!-- 5.5 Reference card -->
+  <section id="reference" class="section reveal">
+    <div class="section__inner">
+      <div class="section__heading-row">
+        <h2 class="section__heading">Colour Reference Card</h2>
+        <button class="btn btn--outline no-print" id="printBtn" type="button">Print / Save</button>
+      </div>
+      <div class="reference-card" id="referenceCard">
+        <div class="reference-card__header">
+          <h3 id="referenceCardTitle">Master Scale: 3:1:1 Optimised Indicator</h3>
+          <p id="referenceCardGroup">The pH-natics</p>
+        </div>
+        <div class="reference-card__ladder" id="referenceCardLadder"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.6 Live Lab Practicum -->
+  <section id="practicum" class="section reveal">
+    <div class="section__inner">
+      <h2 class="section__heading">Live Lab Practicum</h2>
+      <p class="prose">We tested five unknown solutions with our optimised indicator. Tap a card to reveal the estimated pH, classification and true identity.</p>
+      <div class="practicum-grid" id="practicumGrid"></div>
+
+      <h3 class="section__subheading">Results summary</h3>
+      <div class="table-wrap">
+        <table class="results-table" id="practicumResultsTable">
+          <thead>
+            <tr><th>ID</th><th>Observed colour</th><th>Estimated pH</th><th>Classification</th><th>Identity</th></tr>
+          </thead>
+          <tbody id="practicumResultsBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.7 AI pH Estimator -->
+  <section id="estimator" class="section reveal">
+    <div class="section__inner">
+      <h2 class="section__heading">AI pH Estimator</h2>
+      <p class="prose">Upload a photo of the indicator in a test solution, or try one of our Live Lab Practicum samples, to get an AI-estimated pH reading. Everything runs locally in your browser, so no photo ever leaves your device.</p>
+
+      <div class="estimator-controls">
+        <label class="btn" for="estimatorFile">Upload photo</label>
+        <input type="file" id="estimatorFile" accept="image/*" capture="environment" hidden />
+        <span class="estimator-controls__or">or try a sample</span>
+        <div class="estimator-samples" id="estimatorSamples"></div>
+      </div>
+
+      <div class="estimator-workspace" id="estimatorWorkspace" hidden>
+        <div class="estimator-canvas-wrap">
+          <canvas id="estimatorCanvas"></canvas>
+          <div class="estimator-selection" id="estimatorSelection"></div>
+        </div>
+        <p class="hint">Drag on the image to select the region to sample (default: centred box).</p>
+        <button class="btn" id="estimatorSampleBtn" type="button">Estimate pH</button>
+      </div>
+
+      <div class="estimator-output" id="estimatorOutput" hidden>
+        <div class="swatch-compare">
+          <div class="swatch-compare__item">
+            <div class="swatch" id="sampledSwatch"></div>
+            <span>Sampled colour</span>
+          </div>
+          <div class="swatch-compare__item">
+            <div class="swatch" id="nearestSwatch"></div>
+            <span>Nearest calibration point</span>
+          </div>
+        </div>
+        <div class="estimator-readout">
+          <div class="estimator-readout__row"><span>Estimated pH</span><strong id="estimatedPhValue">&ndash;</strong></div>
+          <div class="estimator-readout__row"><span>Band</span><span class="band-chip" id="estimatedBand">&ndash;</span></div>
+          <div class="estimator-readout__row"><span>Confidence</span><span id="estimatedConfidence">&ndash;</span></div>
+        </div>
+        <div class="scale-marker-wrap">
+          <div class="scale-marker-track" id="scaleMarkerTrack"></div>
+          <div class="scale-marker" id="scaleMarker" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.8 Discussion and conclusion -->
+  <section id="discussion" class="section reveal">
+    <div class="section__inner">
+      <h2 class="section__heading">Discussion and Conclusion</h2>
+      <p class="prose" id="discussionSynthesis"></p>
+
+      <div class="discussion-grid">
+        <div>
+          <h3 class="section__subheading">Strengths</h3>
+          <ul id="discussionStrengths"></ul>
+        </div>
+        <div>
+          <h3 class="section__subheading">Limitations</h3>
+          <ul id="discussionLimitations"></ul>
+        </div>
+        <div>
+          <h3 class="section__subheading">Recommended improvements</h3>
+          <ul id="discussionRecommendations"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 5.9 About this build -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p id="aboutBuildNote"></p>
+  </div>
+</footer>
+
+<script src="js/color.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/estimator.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
