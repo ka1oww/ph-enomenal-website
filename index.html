@@ -21,6 +21,7 @@
     <ul class="nav__links" id="navLinks">
       <li><a href="#introduction">Introduction</a></li>
       <li><a href="#science">The Science</a></li>
+      <li><a href="#investigations">Investigations</a></li>
       <li><a href="#optimisation">Optimisation</a></li>
       <li><a href="#reference">Reference Card</a></li>
       <li><a href="#practicum">Practicum</a></li>
@@ -35,8 +36,9 @@
   <!-- 5.0 Hero -->
   <section class="hero" id="hero">
     <div class="hero__inner">
-      <p class="hero__eyebrow" id="heroGroupName">The pH-natics</p>
-      <h1 class="hero__title" id="heroTitle">pH-enomenal Chemistry</h1>
+      <img class="hero__logo" src="assets/phnatics-logo.png" alt="The pH-natics logo" onerror="this.style.display='none'" />
+      <p class="hero__eyebrow" id="heroGroupName">pHw-enomenal Chemistry</p>
+      <h1 class="hero__title" id="heroTitle">The pH-natics</h1>
       <p class="hero__theme" id="heroTheme">Nature's Colours: a broad-range natural pH indicator</p>
       <ul class="hero__members" id="heroMembers"></ul>
       <div class="hero__thumb" aria-hidden="true">
@@ -90,6 +92,18 @@
     </div>
   </section>
 
+  <!-- 5.3 Individual investigations -->
+  <section id="investigations" class="section reveal">
+    <div class="section__inner">
+      <h2 class="section__heading">Individual Investigations</h2>
+      <p class="prose">Each member's Materials &amp; Methods, Results and Discussion for their own plant pigment.</p>
+      <div class="tabs">
+        <div class="tablist" role="tablist" aria-label="Group members" id="tabList"></div>
+        <div id="tabPanels"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- 5.4 Group optimisation -->
   <section id="optimisation" class="section reveal">
     <div class="section__inner">
@@ -98,6 +112,9 @@
 
       <h3 class="section__subheading">Mixing ratios tested</h3>
       <div class="ratio-grid" id="ratioComparison"></div>
+
+      <h3 class="section__subheading">Photos</h3>
+      <div id="optimisationPhotos"></div>
     </div>
   </section>
 
@@ -110,7 +127,7 @@
       </div>
       <div class="reference-card" id="referenceCard">
         <div class="reference-card__header">
-          <h3 id="referenceCardTitle">Master Scale: 3:1:1 Optimised Indicator</h3>
+          <h3 id="referenceCardTitle">Master Scale: 60:40:20 Optimised Indicator</h3>
           <p id="referenceCardGroup">The pH-natics</p>
         </div>
         <div class="reference-card__ladder" id="referenceCardLadder"></div>

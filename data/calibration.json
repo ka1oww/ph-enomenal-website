@@ -1,8 +1,8 @@
 {
   "commonSolutions": [
-    { "role": "acidic", "solution": "White vinegar", "approxPh": 2.5 },
-    { "role": "neutral", "solution": "Distilled water", "approxPh": 7.0 },
-    { "role": "alkaline", "solution": "Baking soda solution", "approxPh": 8.5 }
+    { "role": "acidic", "solution": "Vinegar", "approxPh": 2.5 },
+    { "role": "neutral", "solution": "NaCl salt solution", "approxPh": 7.0 },
+    { "role": "alkaline", "solution": "Detergent", "approxPh": 9.0 }
   ],
   "individual": {
     "cabbage": {
@@ -19,41 +19,41 @@
         { "ph": 13, "colourName": "green-yellow", "rgb": [150, 188, 82] }
       ]
     },
-    "turmeric": {
-      "member": "Song Kang Jun",
-      "plant": "Turmeric",
-      "pigment": "Curcumin",
+    "onion": {
+      "member": "Song Kang Jay",
+      "plant": "Onion",
+      "pigment": "Anthocyanins",
       "points": [
-        { "ph": 2, "colourName": "yellow", "rgb": [232, 200, 40] },
-        { "ph": 4, "colourName": "yellow", "rgb": [230, 198, 42] },
-        { "ph": 7, "colourName": "yellow", "rgb": [226, 190, 44] },
-        { "ph": 8, "colourName": "yellow-orange", "rgb": [224, 160, 42] },
-        { "ph": 9, "colourName": "orange-red", "rgb": [200, 92, 40] },
-        { "ph": 11, "colourName": "red-brown", "rgb": [162, 52, 40] },
-        { "ph": 13, "colourName": "deep red-brown", "rgb": [148, 40, 38] }
+        { "ph": 2, "colourName": "dull brick red", "rgb": [178, 68, 58] },
+        { "ph": 4, "colourName": "dusty rose", "rgb": [175, 92, 88] },
+        { "ph": 6, "colourName": "muted mauve", "rgb": [150, 100, 108] },
+        { "ph": 7, "colourName": "grey-violet", "rgb": [128, 108, 130] },
+        { "ph": 9, "colourName": "dusty blue-grey", "rgb": [100, 118, 140] },
+        { "ph": 11, "colourName": "olive-teal", "rgb": [90, 140, 120] },
+        { "ph": 13, "colourName": "olive-brown", "rgb": [150, 152, 90] }
       ]
     },
-    "beetroot": {
-      "member": "Josiah Soh En Len",
-      "plant": "Beetroot",
-      "pigment": "Betalains (betanin)",
+    "sweetPotato": {
+      "member": "Josiah Soh You Le",
+      "plant": "Purple sweet potato",
+      "pigment": "Anthocyanins",
       "points": [
-        { "ph": 2, "colourName": "red", "rgb": [190, 40, 70] },
-        { "ph": 4, "colourName": "magenta-pink", "rgb": [200, 50, 110] },
-        { "ph": 6, "colourName": "magenta", "rgb": [192, 46, 116] },
-        { "ph": 7, "colourName": "magenta", "rgb": [185, 45, 120] },
-        { "ph": 9, "colourName": "dull purple", "rgb": [150, 62, 118] },
-        { "ph": 11, "colourName": "brown-purple", "rgb": [140, 92, 82] },
-        { "ph": 13, "colourName": "yellow-brown", "rgb": [172, 150, 72] }
+        { "ph": 2, "colourName": "deep pink-red", "rgb": [195, 45, 75] },
+        { "ph": 4, "colourName": "magenta-red", "rgb": [180, 55, 100] },
+        { "ph": 6, "colourName": "deep purple", "rgb": [130, 60, 140] },
+        { "ph": 7, "colourName": "violet-purple", "rgb": [100, 70, 150] },
+        { "ph": 9, "colourName": "blue-violet", "rgb": [70, 90, 160] },
+        { "ph": 11, "colourName": "blue-green", "rgb": [50, 130, 130] },
+        { "ph": 13, "colourName": "green", "rgb": [70, 150, 100] }
       ]
     }
   },
   "mixture": {
-    "ratioLabel": "red cabbage : turmeric : beetroot = 3 : 1 : 1",
+    "ratioLabel": "red cabbage : onion : sweet potato = 60 : 40 : 20 (3 : 2 : 1)",
     "ratioTested": [
-      { "ratio": "1 : 1 : 1", "verdict": "muddier mid-range separation" },
-      { "ratio": "2 : 1 : 1", "verdict": "muddier mid-range separation" },
-      { "ratio": "3 : 1 : 1", "verdict": "cleanest distinct bands across all three pH regions (winner)" }
+      { "ratio": "[ratio pending confirmation]", "verdict": "muddier mid-range separation" },
+      { "ratio": "[ratio pending confirmation]", "verdict": "muddier mid-range separation" },
+      { "ratio": "60 : 40 : 20", "verdict": "cleanest distinct bands across all three pH regions (winner)" }
     ],
     "points": [
       { "ph": 1, "band": "strong acid", "colourName": "red", "rgb": [205, 30, 55] },

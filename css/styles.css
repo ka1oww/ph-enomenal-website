@@ -212,6 +212,12 @@ input[type="range"] { width: 100%; }
     radial-gradient(ellipse at 85% 0%, rgba(44, 152, 138, 0.08), transparent 55%);
 }
 .hero__inner { max-width: 720px; margin: 0 auto; }
+.hero__logo {
+  display: block;
+  width: clamp(96px, 10vw, 140px);
+  height: auto;
+  margin: 0 auto 1.5rem;
+}
 .hero__eyebrow {
   font-family: var(--font-mono);
   text-transform: uppercase;
@@ -295,6 +301,7 @@ input[type="range"] { width: 100%; }
   gap: 1.25rem;
 }
 .lit-card {
+  min-width: 0;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -324,6 +331,8 @@ input[type="range"] { width: 100%; }
   border: 1px dashed rgba(196, 30, 55, 0.35);
   border-radius: var(--radius-sm);
   padding: 0.5rem 0.7rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 /* ---------- science / slider ---------- */
@@ -413,6 +422,124 @@ input#phSlider::-moz-range-track { height: 14px; border-radius: 999px; }
 }
 
 .science-explainer__subheading { font-size: 1.2rem; margin-bottom: 0.8rem; }
+
+/* ---------- tabs ---------- */
+
+.tablist {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.tab {
+  background: none;
+  border: none;
+  padding: 0.8rem 1.1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--ink-faint);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.tab[aria-selected="true"] { color: var(--ink); border-color: var(--violet); font-weight: 600; }
+.tab:hover { color: var(--ink); }
+
+.tabpanel__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2.5rem;
+}
+@media (max-width: 900px) { .tabpanel__grid { grid-template-columns: 1fr; } }
+
+.plan-block { margin-bottom: 1.4rem; }
+.plan-block h4 {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+  margin-bottom: 0.5rem;
+}
+.plan-block p, .plan-block li { color: var(--ink-soft); font-size: 0.95rem; }
+.plan-block ul { margin-top: 0.3rem; }
+.plan-block li { position: relative; padding-left: 1.1rem; margin-bottom: 0.3rem; }
+.plan-block li::before {
+  content: "";
+  position: absolute; left: 0; top: 0.55em;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--violet);
+}
+.plan-block ol { margin-top: 0.3rem; padding-left: 1.2rem; color: var(--ink-soft); font-size: 0.95rem; }
+.plan-block ol li { padding-left: 0.2rem; }
+.plan-block ol li::before { content: none; }
+
+.data-table-wrap { margin-bottom: 1.6rem; }
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+table.data-table th, table.data-table td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--line);
+}
+table.data-table th { color: var(--ink-faint); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.swatch-chip {
+  display: inline-block;
+  width: 26px; height: 26px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.08);
+  vertical-align: middle;
+}
+
+.evaluation-box {
+  background: var(--paper-alt);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1rem 1.2rem;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.9rem;
+  margin-top: 0.8rem;
+}
+.photo-gallery__item {
+  margin: 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+.photo-gallery__item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.photo-gallery__item figcaption {
+  padding: 0.5rem 0.6rem;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+.photo-gallery--large {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+.photo-gallery--large .photo-gallery__item img {
+  aspect-ratio: 4 / 3;
+}
+.photo-gallery--large .photo-gallery__item figcaption {
+  padding: 0.9rem 1rem;
+  font-size: 0.92rem;
+}
 
 /* ---------- ratio comparison ---------- */
 

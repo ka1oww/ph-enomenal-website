@@ -124,6 +124,187 @@ function renderScience(data) {
   wrap.replaceChildren(...content.science.explainer.map((p) => el('p', { html: p })));
 }
 
+// ---------- individual investigation tabs ----------
+// Internal subheadings ("Materials & Methods" / "Results" / "Discussion") use
+// the exact wording from the teacher's checklist, so a grader scanning for
+// those terms can find them without hunting.
+
+function planBlock(heading, node) {
+  return el('div', { class: 'plan-block' }, [el('h4', {}, heading), node]);
+}
+
+function listOf(items) {
+  return el(
+    'ul',
+    {},
+    items.map((i) => el('li', {}, i))
+  );
+}
+
+function orderedListOf(items) {
+  return el(
+    'ol',
+    {},
+    items.map((i) => el('li', {}, i))
+  );
+}
+
+function renderMemberDataTable(points) {
+  return el('div', { class: 'data-table-wrap' }, [
+    el('table', { class: 'data-table' }, [
+      el('thead', {}, el('tr', {}, [el('th', {}, 'pH'), el('th', {}, 'Swatch'), el('th', {}, 'Colour name'), el('th', {}, 'RGB')])),
+      el(
+        'tbody',
+        {},
+        points.map((p) =>
+          el('tr', {}, [
+            el('td', {}, String(p.ph)),
+            el('td', {}, el('span', { class: 'swatch-chip', style: `background:${rgbToHex(p.rgb)}` })),
+            el('td', {}, p.colourName),
+            el('td', { class: 'mono' }, `${p.rgb[0]}, ${p.rgb[1]}, ${p.rgb[2]}`),
+          ])
+        )
+      ),
+    ]),
+  ]);
+}
+
+function renderPhotoGallery(photos, size) {
+  if (!photos || !photos.length) {
+    return el('p', { class: 'hint' }, 'Photos pending.');
+  }
+  const galleryClass = size === 'large' ? 'photo-gallery photo-gallery--large' : 'photo-gallery';
+  return el(
+    'div',
+    { class: galleryClass },
+    photos.map((p) =>
+      el('figure', { class: 'photo-gallery__item' }, [
+        el('img', { src: p.src, alt: p.caption, loading: 'lazy' }),
+        el('figcaption', {}, p.caption),
+      ])
+    )
+  );
+}
+
+function renderTabPanel(member, calibration) {
+  const points = calibration.individual[member.plantKey]?.points || [];
+  const planning = member.planning;
+
+  const materialsMethods = el('div', {}, [
+    el('h3', { class: 'section__subheading', style: 'margin-top:0' }, 'Materials & Methods'),
+    planning.materials ? planBlock('Materials', listOf(planning.materials)) : null,
+    planBlock('Aim', el('p', {}, planning.aim)),
+    planBlock('Hypothesis', el('p', {}, planning.hypothesis)),
+    planBlock(
+      'Variables',
+      el('div', {}, [
+        el('p', {}, [el('strong', {}, 'Independent: '), planning.variables.independent]),
+        el('p', {}, [el('strong', {}, 'Dependent: '), planning.variables.dependent]),
+        el('p', {}, [el('strong', {}, 'Controlled:')]),
+        listOf(planning.variables.controlled),
+      ])
+    ),
+    planBlock('Procedure', orderedListOf(planning.procedure)),
+    planBlock('Safety', listOf(planning.safety)),
+    planBlock('Assumptions', listOf(planning.assumptions)),
+  ]);
+
+  const results = el('div', {}, [
+    el('h3', { class: 'section__subheading', style: 'margin-top:0' }, 'Results'),
+    points.length ? renderMemberDataTable(points) : null,
+    el('p', { html: member.analysis }),
+    el('h4', {}, 'Photos'),
+    renderPhotoGallery(member.photos),
+  ]);
+
+  const discussion = el('div', {}, [
+    el('h3', { class: 'section__subheading' }, 'Discussion'),
+    el('div', { class: 'evaluation-box' }, [
+      el('p', {}, [el('strong', {}, 'Strengths')]),
+      listOf(member.evaluation.strengths),
+      el('p', { style: 'margin-top:0.8em' }, [el('strong', {}, 'Limitations')]),
+      listOf(member.evaluation.limitations),
+      el('p', { style: 'margin-top:0.8em' }, [el('strong', {}, 'Improvement: ')]),
+      el('p', {}, member.evaluation.improvement),
+    ]),
+  ]);
+
+  return el('div', { class: 'tabpanel__grid' }, [materialsMethods, el('div', {}, [results, discussion])]);
+}
+
+function setupTabKeyboardNav(tabs) {
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('keydown', (e) => {
+      let next = null;
+      if (e.key === 'ArrowRight') next = (i + 1) % tabs.length;
+      else if (e.key === 'ArrowLeft') next = (i - 1 + tabs.length) % tabs.length;
+      else if (e.key === 'Home') next = 0;
+      else if (e.key === 'End') next = tabs.length - 1;
+      if (next !== null) {
+        e.preventDefault();
+        tabs[next].click();
+        tabs[next].focus();
+      }
+    });
+  });
+}
+
+function renderTabs(data) {
+  const { members, calibration } = data;
+  const tabList = document.getElementById('tabList');
+  const panelsWrap = document.getElementById('tabPanels');
+  if (!tabList || !panelsWrap) return;
+
+  const tabs = [];
+  const panels = [];
+
+  members.members.forEach((member, i) => {
+    const tabId = `tab-${member.plantKey}`;
+    const panelId = `panel-${member.plantKey}`;
+
+    const tab = el(
+      'button',
+      {
+        role: 'tab',
+        id: tabId,
+        class: 'tab',
+        'aria-selected': i === 0 ? 'true' : 'false',
+        'aria-controls': panelId,
+        tabindex: i === 0 ? '0' : '-1',
+      },
+      `${member.name} (${member.plant})`
+    );
+    tab.addEventListener('click', () => {
+      tabs.forEach((t, j) => {
+        const selected = t === tab;
+        t.setAttribute('aria-selected', String(selected));
+        t.tabIndex = selected ? 0 : -1;
+        panels[j].hidden = !selected;
+      });
+    });
+
+    const panel = el(
+      'div',
+      {
+        role: 'tabpanel',
+        id: panelId,
+        'aria-labelledby': tabId,
+        hidden: i === 0 ? null : '',
+      },
+      renderTabPanel(member, calibration)
+    );
+    if (i === 0) panel.removeAttribute('hidden');
+    else panel.setAttribute('hidden', '');
+
+    tabs.push(tab);
+    panels.push(panel);
+  });
+
+  tabList.replaceChildren(...tabs);
+  panelsWrap.replaceChildren(...panels);
+  setupTabKeyboardNav(tabs);
+}
+
 // ---------- group optimisation ----------
 
 function renderOptimisation(data) {
@@ -142,6 +323,9 @@ function renderOptimisation(data) {
       ]);
     })
   );
+
+  const photosWrap = document.getElementById('optimisationPhotos');
+  if (photosWrap) photosWrap.replaceChildren(renderPhotoGallery(content.groupOptimisation.photos, 'large'));
 }
 
 // ---------- reference card ----------
@@ -300,6 +484,7 @@ async function init() {
   renderHero(data);
   renderIntroduction(data);
   renderScience(data);
+  renderTabs(data);
   renderOptimisation(data);
   renderReferenceCard(data);
   renderPracticum(data);
