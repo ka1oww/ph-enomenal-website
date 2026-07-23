@@ -124,6 +124,45 @@ function renderScience(data) {
   wrap.replaceChildren(...content.science.explainer.map((p) => el('p', { html: p })));
 }
 
+// ---------- ingredients & materials ----------
+
+function renderIngredients(data) {
+  const { content } = data;
+  const ingredients = content.ingredients;
+  if (!ingredients) return;
+
+  const introWrap = document.getElementById('ingredientsIntro');
+  introWrap.replaceChildren(...ingredients.intro.map((p) => el('p', {}, p)));
+
+  const plantsWrap = document.getElementById('ingredientsPlants');
+  plantsWrap.replaceChildren(
+    ...ingredients.plants.map((p) =>
+      el('div', { class: 'plant-card' }, [
+        el('p', { class: 'plant-card__name' }, p.name),
+        el('p', { class: 'plant-card__role' }, p.role),
+      ])
+    )
+  );
+
+  const solutionsWrap = document.getElementById('ingredientsSolutions');
+  solutionsWrap.replaceChildren(
+    ...ingredients.commonSolutions.map((s) =>
+      el('div', { class: 'ingredient-card' }, [
+        el('img', { class: 'ingredient-card__photo', src: s.src, alt: s.caption, loading: 'lazy' }),
+        el('div', { class: 'ingredient-card__body' }, [
+          el('p', { class: 'ingredient-card__name' }, s.name),
+          el('p', { class: 'ingredient-card__role' }, s.role),
+          el('p', { class: 'ingredient-card__product' }, s.product),
+          el('p', { class: 'ingredient-card__caption' }, s.caption),
+        ]),
+      ])
+    )
+  );
+
+  const otherWrap = document.getElementById('ingredientsOther');
+  otherWrap.replaceChildren(...ingredients.otherMaterials.map((i) => el('li', {}, i)));
+}
+
 // ---------- individual investigation tabs ----------
 // Internal subheadings ("Materials & Methods" / "Results" / "Discussion") use
 // the exact wording from the teacher's checklist, so a grader scanning for
@@ -484,6 +523,7 @@ async function init() {
   renderHero(data);
   renderIntroduction(data);
   renderScience(data);
+  renderIngredients(data);
   renderTabs(data);
   renderOptimisation(data);
   renderReferenceCard(data);

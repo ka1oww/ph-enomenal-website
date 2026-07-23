@@ -20,6 +20,48 @@
       "As the pH goes up from very acidic to very alkaline, red cabbage extract changes smoothly through red, pink, purple, blue, teal and green-yellow. Because this colour change happens smoothly across almost the whole pH scale, we used red cabbage as the main pigment in our indicator. We added onion and purple sweet potato on top of it to make specific parts of the scale easier to tell apart."
     ]
   },
+  "ingredients": {
+    "heading": "Ingredients & Materials",
+    "intro": [
+      "This is everything we used for the whole project: the three plants that gave us our pigments, and the three common household solutions we tested them with."
+    ],
+    "plants": [
+      { "name": "Red cabbage", "role": "Main pigment (anthocyanins)", "usedBy": "Yue Peiyu" },
+      { "name": "Onion", "role": "Secondary pigment (anthocyanins)", "usedBy": "Soh Kang Jay" },
+      { "name": "Purple sweet potato", "role": "Secondary pigment (anthocyanins)", "usedBy": "Josiah Soh You Ler" }
+    ],
+    "commonSolutions": [
+      {
+        "name": "Vinegar",
+        "product": "Haday White Rice Vinegar, 450 mL",
+        "role": "Acidic test solution",
+        "src": "assets/ingredient-photos/vinegar.jpg",
+        "caption": "The white rice vinegar we used as our acidic test solution."
+      },
+      {
+        "name": "NaCl salt solution",
+        "product": "FairPrice Premium Quality Fine Salt, dissolved in water",
+        "role": "Neutral test solution",
+        "src": "assets/ingredient-photos/salt.jpg",
+        "caption": "The fine salt we dissolved in water to make the NaCl test solution."
+      },
+      {
+        "name": "Detergent",
+        "product": "Dynamo Anti-Bacterial Liquid Detergent, 2.5 kg",
+        "role": "Alkaline test solution",
+        "src": "assets/ingredient-photos/detergent.jpg",
+        "caption": "The liquid detergent we used as our alkaline test solution."
+      }
+    ],
+    "otherMaterials": [
+      "Hot water for extraction",
+      "Filter paper or a fine sieve",
+      "Solutions at pH 2, 4, 6, 7, 9, 11, 13",
+      "Small containers for testing",
+      "Annex A colour-profiling app",
+      "Camera or smartphone"
+    ]
+  },
   "groupOptimisation": {
     "heading": "Group Optimisation",
     "narrative": [

@@ -783,6 +783,71 @@ table.results-table th { color: var(--ink-faint); font-weight: 600; font-size: 0
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
+/* ---------- ingredients ---------- */
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+.plant-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  box-shadow: var(--shadow-card);
+}
+.plant-card__name { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.3rem; }
+.plant-card__role { color: var(--ink-soft); font-size: 0.92rem; margin-bottom: 0.4rem; }
+.plant-card__used-by {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+.ingredient-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.ingredient-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+.ingredient-card__photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.ingredient-card__body { padding: 1.1rem 1.3rem; }
+.ingredient-card__name { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.2rem; }
+.ingredient-card__role { color: var(--violet); font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; }
+.ingredient-card__product { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 0.4rem; }
+.ingredient-card__caption { color: var(--ink-faint); font-size: 0.85rem; }
+
+.prose-list { margin-top: 0.5rem; }
+.prose-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.prose-list li::before {
+  content: "";
+  position: absolute; left: 0; top: 0.55em;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--violet);
+}
+
 /* ---------- discussion ---------- */
 
 .discussion-grid {

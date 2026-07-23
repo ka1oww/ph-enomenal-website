@@ -24,9 +24,9 @@
         "planning": {
           "materials": [
             "Fresh red cabbage",
-            "Hot water (and/or ethanol)",
+            "Hot water",
             "Filter paper or a fine sieve",
-            "Buffer solutions at pH 2, 4, 6, 7, 9, 11, 13",
+            "Solutions at pH 2, 4, 6, 7, 9, 11, 13",
             "The three agreed common solutions (vinegar, NaCl salt solution, detergent)",
             "Small containers for testing",
             "Annex A colour-profiling app",
@@ -35,11 +35,11 @@
           "aim": "To investigate how the colour of red cabbage extract changes across different pH values (2-13), and to find out if it can be used as a broad-range natural pH indicator.",
           "hypothesis": "If the pH of the test solution increases from strongly acidic to strongly alkaline, then the red cabbage extract will change progressively through red, pink, purple, blue, teal and green-yellow, because the anthocyanin pigments change structure, and so their colour, as they gain or lose hydrogen ions.",
           "variables": {
-            "independent": "pH of the test solution (buffers at pH 2, 4, 6, 7, 9, 11, 13)",
-            "dependent": "observed colour of the cabbage extract (colour name and RGB) after mixing with each buffer",
+            "independent": "pH of the test solution (pH 2, 4, 6, 7, 9, 11, 13)",
+            "dependent": "observed colour of the cabbage extract (colour name and RGB) after mixing with each solution",
             "controlled": [
               "volume of extract added",
-              "volume and concentration of each buffer",
+              "volume and concentration of each solution",
               "extraction method and pigment concentration",
               "lighting conditions when reading colour",
               "time elapsed before reading colour",
@@ -48,21 +48,19 @@
           },
           "procedure": [
             "Chop red cabbage leaves finely to increase surface area for extraction.",
-            "Steep the chopped cabbage in hot water (or a hot water/ethanol mixture) for a fixed time to extract the anthocyanin pigment.",
+            "Steep the chopped cabbage in hot water for a fixed time to extract the anthocyanin pigment.",
             "Filter the extract to remove solid plant matter, keeping the coloured filtrate.",
-            "Add a fixed volume of extract to each buffer solution (pH 2, 4, 6, 7, 9, 11, 13) and to the three agreed common solutions (vinegar, NaCl salt solution, detergent).",
+            "Add a fixed volume of extract to each solution (pH 2, 4, 6, 7, 9, 11, 13) and to the three agreed common solutions (vinegar, NaCl salt solution, detergent).",
             "Profile the resulting colour with the Annex A colour-profiling app under consistent lighting to record RGB values.",
             "Repeat for reliability and record colour name and RGB at each pH."
           ],
           "safety": [
             "Hot liquids during extraction: risk of scalding, handle with care.",
-            "Ethanol (if used) is flammable: keep away from open flame, extract in a ventilated area.",
-            "Alkaline test solutions are irritant: avoid skin and eye contact.",
-            "Wear eye protection throughout."
+            "Alkaline test solutions are irritant: avoid skin and eye contact."
           ],
           "assumptions": [
             "Extracted pigment concentration is roughly consistent between batches.",
-            "Buffer solutions are accurately at their stated pH.",
+            "Solutions are accurately at their stated pH.",
             "Lighting and camera settings are stable across all readings so RGB values are comparable."
           ]
         },
@@ -82,19 +80,19 @@
           },
           {
             "src": "assets/peiyu-photos/peiyu-04-three-solutions.jpg",
-            "caption": "The extract added to the three agreed test solutions, showing three different colours. [Caption pending: confirm which bowl is which solution.]"
+            "caption": "The extract added to the three agreed test solutions. Left: detergent (alkaline, green). Middle: NaCl salt solution (neutral, purple). Right: vinegar (acidic, pink)."
           },
           {
-            "src": "assets/peiyu-photos/peiyu-05-pink-result.jpg",
-            "caption": "Close-up of one of the colour results. [Caption pending: confirm which solution this is.]"
+            "src": "assets/peiyu-photos/peiyu-05-three-solutions-2.jpg",
+            "caption": "Another view of the extract's colour in all three test solutions, next to the main cabbage extract."
           },
           {
-            "src": "assets/peiyu-photos/peiyu-06-red-result.jpg",
-            "caption": "The extract's red colour in one of the test solutions. [Caption pending: confirm which solution this is.]"
+            "src": "assets/peiyu-photos/peiyu-06-green-purple-compare.jpg",
+            "caption": "Close-up comparing the extract's colour in detergent (left, green) and NaCl salt solution (right, purple)."
           },
           {
-            "src": "assets/peiyu-photos/peiyu-07-purple-result.jpg",
-            "caption": "The extract's colour in another test solution. [Caption pending: confirm which solution this is.]"
+            "src": "assets/peiyu-photos/peiyu-07-pink-result.jpg",
+            "caption": "Close-up of the extract's pink colour in vinegar, the acidic test solution."
           }
         ],
         "evaluation": {
@@ -111,21 +109,21 @@
         },
         "literatureReview": {
           "focus": "Anthocyanins as natural pH indicators",
-          "summary": "Anthocyanins are blue, red, or purple pigments found in plants, especially flowers, fruits, and tubers. In acidic condition, anthocyanin appears as red pigment while blue pigment anthocyanin exists in alkaline.",
+          "summary": "Anthocyanins are blue, red, or purple pigments found in plants, especially flowers, fruits, and tubers. Anthocyanin appears as a red pigment in acidic conditions, while a blue pigment exists in alkaline conditions.",
           "citation": "Khoo, H. E., Azlan, A., Tang, S. T., & Lim, S. M. (2017). Anthocyanidins and anthocyanins: Colored pigments as food, pharmaceutical ingredients, and the potential health benefits. Food & Nutrition Research, 61(1), Article 1361779. https://doi.org/10.1080/16546628.2017.1361779"
         }
       },
       {
-        "name": "Song Kang Jay",
+        "name": "Soh Kang Jay",
         "plantKey": "Onion Skin",
         "plant": "Onion",
         "pigment": "Anthocyanin Pigments",
         "planning": {
           "materials": [
             "Dry onion skins",
-            "Hot water (and/or ethanol)",
+            "Hot water",
             "Filter paper or a fine sieve",
-            "Buffer solutions at pH 2, 4, 6, 7, 9, 11, 13",
+            "Solutions at pH 2, 4, 6, 7, 9, 11, 13",
             "The three agreed common solutions (vinegar, NaCl salt solution, detergent)",
             "Small containers for testing",
             "Annex A colour-profiling app",
@@ -134,11 +132,11 @@
           "aim": "To investigate how the colour of onion skin extract changes across different pH values (2-13), and to find out if it can be used as a natural pH indicator.",
           "hypothesis": "If the pH of the test solution increases from strongly acidic to strongly alkaline, then the onion skin extract will change gradually from a dull red through muted pink-purple tones to olive-brown, because the anthocyanin pigments in onion skin change structure, and so their colour, as they gain or lose hydrogen ions, in the same way as red cabbage.",
           "variables": {
-            "independent": "pH of the test solution (buffers at pH 2, 4, 6, 7, 9, 11, 13)",
-            "dependent": "observed colour of the onion skin extract (colour name and RGB) after mixing with each buffer",
+            "independent": "pH of the test solution (pH 2, 4, 6, 7, 9, 11, 13)",
+            "dependent": "observed colour of the onion skin extract (colour name and RGB) after mixing with each solution",
             "controlled": [
               "volume of extract added",
-              "volume and concentration of each buffer",
+              "volume and concentration of each solution",
               "extraction method and pigment concentration",
               "lighting conditions when reading colour",
               "time elapsed before reading colour",
@@ -147,21 +145,19 @@
           },
           "procedure": [
             "Peel the dry outer skins from onions and chop them finely to increase surface area for extraction.",
-            "Steep the chopped onion skin in hot water (or a hot water/ethanol mixture) for a fixed time to extract the anthocyanin pigment.",
+            "Steep the chopped onion skin in hot water for a fixed time to extract the anthocyanin pigment.",
             "Filter the extract to remove solid plant matter, keeping the coloured filtrate.",
-            "Add a fixed volume of extract to each buffer solution (pH 2, 4, 6, 7, 9, 11, 13) and to the three agreed common solutions.",
+            "Add a fixed volume of extract to each solution (pH 2, 4, 6, 7, 9, 11, 13) and to the three agreed common solutions.",
             "Profile the resulting colour with the Annex A colour-profiling app under consistent lighting to record RGB values.",
             "Repeat for reliability and record colour name and RGB at each pH."
           ],
           "safety": [
             "Hot liquids during extraction: risk of scalding, handle with care.",
-            "Ethanol (if used) is flammable: keep away from open flame, extract in a ventilated area.",
-            "Alkaline test solutions are irritant: avoid skin and eye contact.",
-            "Wear eye protection throughout."
+            "Alkaline test solutions are irritant: avoid skin and eye contact."
           ],
           "assumptions": [
             "Extracted pigment concentration is roughly consistent between batches.",
-            "Buffer solutions are accurately at their stated pH.",
+            "Solutions are accurately at their stated pH.",
             "Lighting and camera settings are stable across all readings so RGB values are comparable."
           ]
         },
@@ -181,19 +177,19 @@
           },
           {
             "src": "assets/kang-jay-photos/kang-jay-04-three-solutions.jpg",
-            "caption": "The extract added to the three agreed test solutions. Top: detergent. Middle: NaCl salt solution. Bottom: vinegar."
+            "caption": "The extract added to the three agreed test solutions. Left: detergent (alkaline, brown). Middle: NaCl salt solution (neutral, salmon-pink). Right: vinegar (acidic, red-orange)."
           },
           {
-            "src": "assets/kang-jay-photos/kang-jay-05-orange-pink-result.jpg",
-            "caption": "The extract's colour in detergent, the alkaline test solution."
+            "src": "assets/kang-jay-photos/kang-jay-05-three-solutions-2.jpg",
+            "caption": "Another view of the extract's colour in all three test solutions, next to the main onion extract."
           },
           {
-            "src": "assets/kang-jay-photos/kang-jay-06-pink-result.jpg",
-            "caption": "The extract's colour in NaCl salt solution, the neutral test solution."
+            "src": "assets/kang-jay-photos/kang-jay-06-nacl-vinegar-compare.jpg",
+            "caption": "Close-up comparing the extract's colour in NaCl salt solution (left, salmon-pink) and vinegar (right, red-orange)."
           },
           {
-            "src": "assets/kang-jay-photos/kang-jay-07-red-result.jpg",
-            "caption": "The extract's red colour in vinegar, the acidic test solution."
+            "src": "assets/kang-jay-photos/kang-jay-07-extract-close.jpg",
+            "caption": "The concentrated onion extract in the mixing bowl, with a chopstick and syringe used to measure drops into each test solution."
           }
         ],
         "evaluation": {
@@ -210,21 +206,21 @@
         },
         "literatureReview": {
           "focus": "Anthocyanin pigment stability across pH",
-          "summary": "Anthocyanin pigments have been widely used as natural food colorants. However, the color and stability of these pigments are influenced by pH, light, temperature, and structure. At acidic pH, anthocyanins are red pigments, while they shift to blue in a basic environment. However, at basic pH, anthocyanins are unstable and tend to degrade to dark brown oxidized compounds.",
+          "summary": "Anthocyanin pigments are used as natural food colorants. However, the color and stability of these pigments are influenced by pH among other factors. At acidic pH, anthocyanins are red pigments, and turn blue in basic mediums. However, at basic pH, anthocyanins are unstable and tend to degrade to dark brown oxidized compounds.",
           "citation": "Mattioli, R., Francioso, A., Mosca, L., & Silva, P. (2020). Anthocyanins: A comprehensive review of their chemical properties and health effects on cardiovascular and neurodegenerative diseases. Molecules, 25(17), Article 3809. https://doi.org/10.3390/molecules25173809"
         }
       },
       {
-        "name": "Josiah Soh You Le",
+        "name": "Josiah Soh You Ler",
         "plantKey": "sweetPotato",
         "plant": "Purple sweet potato",
         "pigment": "Anthocyanins",
         "planning": {
           "materials": [
             "Fresh purple sweet potato",
-            "Hot water (and/or ethanol)",
+            "Hot water",
             "Filter paper or a fine sieve",
-            "Buffer solutions at pH 2, 4, 6, 7, 9, 11, 13",
+            "Solutions at pH 2, 4, 6, 7, 9, 11, 13",
             "The three agreed common solutions (vinegar, NaCl salt solution, detergent)",
             "Small containers for testing",
             "Annex A colour-profiling app",
@@ -233,11 +229,11 @@
           "aim": "To investigate how the colour of purple sweet potato extract changes across different pH values (2-13), and to find out if it can be used as a natural pH indicator.",
           "hypothesis": "If the pH of the test solution increases from strongly acidic to strongly alkaline, then the purple sweet potato extract will change gradually from pink-red through deep purple to blue-green, because the anthocyanin pigments in purple sweet potato change structure, and so their colour, as they gain or lose hydrogen ions, in the same way as red cabbage.",
           "variables": {
-            "independent": "pH of the test solution (buffers at pH 2, 4, 6, 7, 9, 11, 13)",
-            "dependent": "observed colour of the sweet potato extract (colour name and RGB) after mixing with each buffer",
+            "independent": "pH of the test solution (pH 2, 4, 6, 7, 9, 11, 13)",
+            "dependent": "observed colour of the sweet potato extract (colour name and RGB) after mixing with each solution",
             "controlled": [
               "volume of extract added",
-              "volume and concentration of each buffer",
+              "volume and concentration of each solution",
               "extraction method and pigment concentration",
               "lighting conditions when reading colour",
               "time elapsed before reading colour",
@@ -246,21 +242,19 @@
           },
           "procedure": [
             "Peel and finely chop purple sweet potato to increase surface area for extraction.",
-            "Steep the chopped sweet potato in hot water (or a hot water/ethanol mixture) for a fixed time to extract the anthocyanin pigment.",
+            "Steep the chopped sweet potato in hot water for a fixed time to extract the anthocyanin pigment.",
             "Filter the extract to remove solid plant matter, keeping the coloured filtrate.",
-            "Add a fixed volume of extract to each buffer solution (pH 2, 4, 6, 7, 9, 11, 13) and to the three agreed common solutions.",
+            "Add a fixed volume of extract to each solution (pH 2, 4, 6, 7, 9, 11, 13) and to the three agreed common solutions.",
             "Profile the resulting colour with the Annex A colour-profiling app under consistent lighting to record RGB values.",
             "Repeat for reliability and record colour name and RGB at each pH."
           ],
           "safety": [
             "Hot liquids during extraction: risk of scalding, handle with care.",
-            "Ethanol (if used) is flammable: keep away from open flame, extract in a ventilated area.",
-            "Alkaline test solutions are irritant: avoid skin and eye contact.",
-            "Wear eye protection throughout."
+            "Alkaline test solutions are irritant: avoid skin and eye contact."
           ],
           "assumptions": [
             "Extracted pigment concentration is roughly consistent between batches.",
-            "Buffer solutions are accurately at their stated pH.",
+            "Solutions are accurately at their stated pH.",
             "Lighting and camera settings are stable across all readings so RGB values are comparable."
           ]
         },
@@ -275,20 +269,20 @@
             "caption": "Another sample of the filtered extract."
           },
           {
-            "src": "assets/josiah-photos/josiah-10-holding-result-1.jpg",
-            "caption": "The extract's colour in detergent, the alkaline test solution."
+            "src": "assets/josiah-photos/josiah-10-detergent-result.jpg",
+            "caption": "The extract's colour in detergent, the alkaline test solution: green."
           },
           {
-            "src": "assets/josiah-photos/josiah-11-holding-result-2.jpg",
-            "caption": "The extract's colour in NaCl salt solution, the neutral test solution."
+            "src": "assets/josiah-photos/josiah-11-nacl-result.jpg",
+            "caption": "The extract's colour in NaCl salt solution, the neutral test solution: blue-teal."
           },
           {
-            "src": "assets/josiah-photos/josiah-12-holding-result-3.jpg",
-            "caption": "The extract's colour in vinegar, the acidic test solution."
+            "src": "assets/josiah-photos/josiah-12-vinegar-result.jpg",
+            "caption": "The extract's colour in vinegar, the acidic test solution: magenta."
           },
           {
             "src": "assets/josiah-photos/josiah-13-three-solutions-2.jpg",
-            "caption": "The three test results together. Top: detergent. Middle: NaCl salt solution. Bottom: vinegar."
+            "caption": "The three test results together. Left: detergent (green). Middle: NaCl salt solution (blue-teal). Right: vinegar (magenta)."
           }
         ],
         "evaluation": {
@@ -305,7 +299,7 @@
         },
         "literatureReview": {
           "focus": "Purple sweet potato anthocyanins",
-          "summary": "Purple sweet potato (PSP) tubers are sources of anthocyanin, a pigment that can show colour changes at different pH values. They showed red colour at pH 1-2, pink at pH 3-6, and purple at pH 7. At pH 8-9, they were blue, turned to green at pH 10-11, and yellow at pH 12-14.",
+          "summary": "Purple sweet potato are sources of anthocyanin, a pigment that can show colour changes at different pH values. They show red colour at pH 1-2, pink at pH 3-6, purple at pH 7, blue at pH 8-9, green at pH 10-11, and yellow at pH 12-14.",
           "citation": "Leba, M. A. U., Boelan, E. G., Taek, M. M., Mau, S. D. B., Ruas, J. de C., Tukan, M. B., Ruas, A. de C., Ruas, N. A., Lawung, Y. D., Kopon, A. M., Komisia, F., & Baunsele, A. B. (2024). Exploring purple sweet potato pigment as an eco-friendly titration indicator for acid determination. Tropical Journal of Natural Product Research, 8(6), 7403–7409. https://doi.org/10.26538/tjnpr/v8i6.10"
         }
       }
@@ -401,7 +395,7 @@
         ]
       },
       "onion": {
-        "member": "Song Kang Jay",
+        "member": "Soh Kang Jay",
         "plant": "Onion",
         "pigment": "Anthocyanins",
         "points": [
@@ -471,7 +465,7 @@
         ]
       },
       "sweetPotato": {
-        "member": "Josiah Soh You Le",
+        "member": "Josiah Soh You Ler",
         "plant": "Purple sweet potato",
         "pigment": "Anthocyanins",
         "points": [
@@ -545,11 +539,11 @@
       "ratioLabel": "red cabbage : onion : sweet potato = 60 : 40 : 20 (3 : 2 : 1)",
       "ratioTested": [
         {
-          "ratio": "[ratio pending confirmation]",
+          "ratio": "40 : 40 : 20",
           "verdict": "muddier mid-range separation"
         },
         {
-          "ratio": "[ratio pending confirmation]",
+          "ratio": "40 : 20 : 40",
           "verdict": "muddier mid-range separation"
         },
         {
@@ -720,6 +714,60 @@
       "explainer": [
         "Red cabbage gets its colour from pigments called <strong>anthocyanins</strong>. These pigment molecules gain or lose hydrogen ions (H<sup>+</sup>) depending on how acidic or alkaline the solution is. When the molecule gains or loses a hydrogen ion, its structure changes a little. A molecule with a different structure absorbs a different colour of light, and that is why we see the colour change.",
         "As the pH goes up from very acidic to very alkaline, red cabbage extract changes smoothly through red, pink, purple, blue, teal and green-yellow. Because this colour change happens smoothly across almost the whole pH scale, we used red cabbage as the main pigment in our indicator. We added onion and purple sweet potato on top of it to make specific parts of the scale easier to tell apart."
+      ]
+    },
+    "ingredients": {
+      "heading": "Ingredients & Materials",
+      "intro": [
+        "This is everything we used for the whole project: the three plants that gave us our pigments, and the three common household solutions we tested them with."
+      ],
+      "plants": [
+        {
+          "name": "Red cabbage",
+          "role": "Main pigment (anthocyanins)",
+          "usedBy": "Yue Peiyu"
+        },
+        {
+          "name": "Onion",
+          "role": "Secondary pigment (anthocyanins)",
+          "usedBy": "Soh Kang Jay"
+        },
+        {
+          "name": "Purple sweet potato",
+          "role": "Secondary pigment (anthocyanins)",
+          "usedBy": "Josiah Soh You Ler"
+        }
+      ],
+      "commonSolutions": [
+        {
+          "name": "Vinegar",
+          "product": "Haday White Rice Vinegar, 450 mL",
+          "role": "Acidic test solution",
+          "src": "assets/ingredient-photos/vinegar.jpg",
+          "caption": "The white rice vinegar we used as our acidic test solution."
+        },
+        {
+          "name": "NaCl salt solution",
+          "product": "FairPrice Premium Quality Fine Salt, dissolved in water",
+          "role": "Neutral test solution",
+          "src": "assets/ingredient-photos/salt.jpg",
+          "caption": "The fine salt we dissolved in water to make the NaCl test solution."
+        },
+        {
+          "name": "Detergent",
+          "product": "Dynamo Anti-Bacterial Liquid Detergent, 2.5 kg",
+          "role": "Alkaline test solution",
+          "src": "assets/ingredient-photos/detergent.jpg",
+          "caption": "The liquid detergent we used as our alkaline test solution."
+        }
+      ],
+      "otherMaterials": [
+        "Hot water for extraction",
+        "Filter paper or a fine sieve",
+        "Solutions at pH 2, 4, 6, 7, 9, 11, 13",
+        "Small containers for testing",
+        "Annex A colour-profiling app",
+        "Camera or smartphone"
       ]
     },
     "groupOptimisation": {

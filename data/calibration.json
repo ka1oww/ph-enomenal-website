@@ -20,7 +20,7 @@
       ]
     },
     "onion": {
-      "member": "Song Kang Jay",
+      "member": "Soh Kang Jay",
       "plant": "Onion",
       "pigment": "Anthocyanins",
       "points": [
@@ -34,7 +34,7 @@
       ]
     },
     "sweetPotato": {
-      "member": "Josiah Soh You Le",
+      "member": "Josiah Soh You Ler",
       "plant": "Purple sweet potato",
       "pigment": "Anthocyanins",
       "points": [
@@ -51,8 +51,8 @@
   "mixture": {
     "ratioLabel": "red cabbage : onion : sweet potato = 60 : 40 : 20 (3 : 2 : 1)",
     "ratioTested": [
-      { "ratio": "[ratio pending confirmation]", "verdict": "muddier mid-range separation" },
-      { "ratio": "[ratio pending confirmation]", "verdict": "muddier mid-range separation" },
+      { "ratio": "40 : 40 : 20", "verdict": "muddier mid-range separation" },
+      { "ratio": "40 : 20 : 40", "verdict": "muddier mid-range separation" },
       { "ratio": "60 : 40 : 20", "verdict": "cleanest distinct bands across all three pH regions (winner)" }
     ],
     "points": [
