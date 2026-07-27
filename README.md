@@ -53,7 +53,7 @@ assets/              favicon + Live Lab Practicum photo slots
 
 ## A note on the dataset
 
-This build is the maximum-AI arm of a class experiment comparing AI-assisted and human-produced coursework (see the footer note on the live site). The calibration and practicum numbers throughout are illustrative and AI-generated for the demo, grounded in real indicator chemistry (how anthocyanins, curcumin and betalains each respond to pH) but **not real lab readings**. Swap in real data from the group's own trials before treating this as a submission of fact.
+This build is the maximum-AI arm of a class experiment comparing AI-assisted and human-produced coursework (see the footer note on the live site). The smooth calibration ladder used by the interactive slider and AI estimator is illustrative and AI-generated for the demo, grounded in real indicator chemistry. The Live Lab Practicum section uses the group's real colour-meter RGB readings and lab photos for coded solutions A-F.
 
 All chemistry copy on the site is written at Sec 3 O-level syllabus level (pH scale, acids producing H+ ions, alkalis producing OH- ions, indicators changing colour with pH) — deliberately not A-level/university vocabulary, since this is a real Sec 3 student's submission.
 
@@ -61,7 +61,6 @@ All chemistry copy on the site is written at Sec 3 O-level syllabus level (pH sc
 
 - [ ] Confirm/replace the group name (currently "The pH-natics" — alternates "Litmus League", "Anthocyanin Alliance", "The Indicators" are listed in `groupNameAlternates` in `data/members.json`; `groupName` is a single field, easy to swap).
 - [ ] Confirm the plant-to-member assignment (currently Peiyu = red cabbage, Kang Jun = turmeric, Josiah = beetroot). Swap freely in `data/members.json` and `data/calibration.json`.
-- [ ] Drop real Live Lab Practicum photos into `/assets` as `practicum-U1.jpg` … `practicum-U5.jpg` — the `<img>` slots are already wired up in the practicum cards and will replace the colour-swatch placeholders automatically once the files exist.
 - [ ] Insert three verified, checkable journal references for the literature review cards in `data/members.json` (each is currently `[insert verified reference]` — do not invent authors or DOIs).
 - [ ] **Page 5 of the source assignment brief was missing** when this was built, so the exact required Results/Discussion sub-heading names may not match the rubric exactly. The site covers the standard scientific-method structure (Introduction, Science, Group Optimisation, Reference Card, Practicum, AI Estimator, Discussion) — cross-check against page 5 and rename headings if needed.
 - [ ] Deploy (see above) and paste the URL into Google Classroom.

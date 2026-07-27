@@ -80,6 +80,11 @@ function bandChip(ph) {
   return el('span', { class: `band-chip ${bandClassName(band)}` }, band);
 }
 
+function classificationChip(classification) {
+  const band = classification.toLowerCase();
+  return el('span', { class: `band-chip ${bandClassName(band)}` }, classification);
+}
+
 // ---------- hero ----------
 
 function renderHero(data) {
@@ -399,30 +404,18 @@ function renderPracticum(data) {
     ...practicum.unknowns.map((u) => {
       const card = el(
         'div',
-        { class: 'practicum-card', role: 'button', tabindex: '0', 'aria-pressed': 'false', 'aria-label': `Unknown ${u.id}, tap to reveal identity` },
+        { class: 'practicum-card', role: 'button', tabindex: '0', 'aria-pressed': 'false', 'aria-label': `Sample ${u.id}, tap to reveal result` },
         el('div', { class: 'practicum-card__inner' }, [
           el('div', { class: 'practicum-card__face practicum-card__face--front' }, [
-            el('span', { class: 'practicum-card__id mono' }, u.id),
-            el('img', {
-              class: 'practicum-photo',
-              src: u.image,
-              alt: `Photo of unknown ${u.id} test solution`,
-              style: 'display:none',
-              onerror: function () {
-                this.style.display = 'none';
-              },
-              onload: function () {
-                this.style.display = 'block';
-              },
-            }),
+            el('span', { class: 'practicum-card__id mono' }, `Sample ${u.id}`),
             el('div', { class: 'practicum-card__swatch', style: `background:${rgbToHex(u.rgb)}` }),
-            el('span', { class: 'practicum-card__caption' }, `${u.observedColour} (colour swatch, photo placeholder)`),
+            el('span', { class: 'practicum-card__caption' }, `${u.observedColour} · RGB ${u.rgb.join(', ')}`),
           ]),
           el('div', { class: 'practicum-card__face practicum-card__face--back' }, [
-            el('span', { class: 'practicum-card__id mono' }, u.id),
-            el('div', { class: 'practicum-card__identity' }, u.identity),
+            el('span', { class: 'practicum-card__id mono' }, `Sample ${u.id}`),
+            el('div', { class: 'practicum-card__result' }, u.classification),
             el('div', { class: 'practicum-card__ph' }, `Estimated pH ${u.estimatedPh}`),
-            bandChip(parseFloat(u.estimatedPh.replace('~', ''))),
+            classificationChip(u.classification),
           ]),
         ])
       );
@@ -449,9 +442,9 @@ function renderPracticum(data) {
       el('tr', {}, [
         el('td', { class: 'mono' }, u.id),
         el('td', {}, u.observedColour),
+        el('td', { class: 'mono' }, u.rgb.join(', ')),
         el('td', { class: 'mono' }, u.estimatedPh),
-        el('td', {}, bandChip(parseFloat(u.estimatedPh.replace('~', '')))),
-        el('td', {}, u.identity),
+        el('td', {}, classificationChip(u.classification)),
       ])
     )
   );

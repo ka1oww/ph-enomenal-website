@@ -40,10 +40,10 @@ function trimmedAverageRgb(imageData) {
   return [Math.round(sum[0] / usable.length), Math.round(sum[1] / usable.length), Math.round(sum[2] / usable.length)];
 }
 
-// Generates a stand-in "photo" for a U1-U5 sample so the estimator has
-// something plausible to sample from before real practicum photos are
-// dropped into /assets. Adds gentle noise and a few glare/shadow pixels so
-// the outlier-trimming step in Section 6 step 3 has something to do.
+// Generates a swatch from one of the measured A-F practicum RGB values so
+// the estimator can demonstrate its matching step without asking the visitor
+// to crop a beaker from the full lab photo. Adds gentle noise and a few
+// glare/shadow pixels so the outlier-trimming step has something to do.
 function drawSyntheticSwatch(ctx, w, h, [r, g, b]) {
   const imageData = ctx.createImageData(w, h);
   const data = imageData.data;

@@ -49,11 +49,11 @@
     }
   },
   "mixture": {
-    "ratioLabel": "red cabbage : onion : sweet potato = 60 : 40 : 20 (3 : 2 : 1)",
+    "ratioLabel": "red cabbage : onion : sweet potato = 60 : 40 : 40 (3 : 2 : 2)",
     "ratioTested": [
       { "ratio": "40 : 40 : 20", "verdict": "muddier mid-range separation" },
       { "ratio": "40 : 20 : 40", "verdict": "muddier mid-range separation" },
-      { "ratio": "60 : 40 : 20", "verdict": "cleanest distinct bands across all three pH regions (winner)" }
+      { "ratio": "60 : 40 : 40", "verdict": "cleanest distinct bands across all three pH regions (winner)" }
     ],
     "points": [
       { "ph": 1, "band": "strong acid", "colourName": "red", "rgb": [205, 30, 55] },

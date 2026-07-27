@@ -145,7 +145,7 @@
       </div>
       <div class="reference-card" id="referenceCard">
         <div class="reference-card__header">
-          <h3 id="referenceCardTitle">Master Scale: 60:40:20 Optimised Indicator</h3>
+          <h3 id="referenceCardTitle">Master Scale: 60:40:40 Optimised Indicator</h3>
           <p id="referenceCardGroup">The pH-natics</p>
         </div>
         <div class="reference-card__ladder" id="referenceCardLadder"></div>
@@ -157,14 +157,37 @@
   <section id="practicum" class="section reveal">
     <div class="section__inner">
       <h2 class="section__heading">Live Lab Practicum</h2>
-      <p class="prose">We tested five unknown solutions with our optimised indicator. Tap a card to reveal the estimated pH, classification and true identity.</p>
+      <div class="prose">
+        <p>We received six unknown solutions labelled A to F. We added our optimised natural indicator to each solution, compared the resulting colour with our reference card, and used a colour meter app to record its RGB value.</p>
+        <p>The actual identities were not given to us, so we reported each coded solution by its estimated pH and whether it was acidic, neutral or alkaline.</p>
+      </div>
+
+      <ol class="practicum-method" aria-label="Live Lab method">
+        <li><strong>Add indicator</strong><span>We added the same optimised indicator mixture to each coded solution.</span></li>
+        <li><strong>Compare colours</strong><span>We matched each result against our printed pH colour reference.</span></li>
+        <li><strong>Record the result</strong><span>We measured the colour's RGB value and estimated its pH range.</span></li>
+      </ol>
+
+      <div class="photo-gallery photo-gallery--large practicum-evidence">
+        <figure class="photo-gallery__item">
+          <img src="assets/practicum/results-lineup.jpg" alt="Six coded solutions A to F after the natural indicator was added" loading="lazy" />
+          <figcaption>The six coded solutions after testing. From left to right: E, B, A, D, C and F.</figcaption>
+        </figure>
+        <figure class="photo-gallery__item">
+          <img src="assets/practicum/reference-comparison.jpg" alt="Test solutions arranged beside the printed pH colour reference card" loading="lazy" />
+          <figcaption>We compared the test colours with our printed reference card before recording the estimated pH.</figcaption>
+        </figure>
+      </div>
+
+      <p class="practicum-hint">Tap a sample card to reveal its result.</p>
       <div class="practicum-grid" id="practicumGrid"></div>
 
       <h3 class="section__subheading">Results summary</h3>
+      <p class="prose">RGB values were measured using the colour meter app under the laboratory lighting. Samples A and D both gave the same neutral result.</p>
       <div class="table-wrap">
         <table class="results-table" id="practicumResultsTable">
           <thead>
-            <tr><th>ID</th><th>Observed colour</th><th>Estimated pH</th><th>Classification</th><th>Identity</th></tr>
+            <tr><th>Sample</th><th>Observed colour</th><th>Measured RGB</th><th>Estimated pH</th><th>Classification</th></tr>
           </thead>
           <tbody id="practicumResultsBody"></tbody>
         </table>

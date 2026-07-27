@@ -3,7 +3,7 @@
 // URL, where script type=module loading itself is blocked — see color.js).
 // Plain classic script (not an ES module), loaded on demand by main.js.
 // Generated from the JSON files; keep them in sync if you edit either.
-// Regeneration command: see README.md "Editing content".
+// Regeneration command: see README.md Editing content.
 
 (function (global) {
   global.PH_DATA_FALLBACK = {
@@ -536,7 +536,7 @@
       }
     },
     "mixture": {
-      "ratioLabel": "red cabbage : onion : sweet potato = 60 : 40 : 20 (3 : 2 : 1)",
+      "ratioLabel": "red cabbage : onion : sweet potato = 60 : 40 : 40 (3 : 2 : 2)",
       "ratioTested": [
         {
           "ratio": "40 : 40 : 20",
@@ -547,7 +547,7 @@
           "verdict": "muddier mid-range separation"
         },
         {
-          "ratio": "60 : 40 : 20",
+          "ratio": "60 : 40 : 40",
           "verdict": "cleanest distinct bands across all three pH regions (winner)"
         }
       ],
@@ -628,69 +628,70 @@
   practicum: {
     "unknowns": [
       {
-        "id": "U1",
-        "identity": "Lemon juice",
-        "observedColour": "red",
+        "id": "A",
+        "observedColour": "muted pink",
         "rgb": [
-          203,
-          34,
-          58
-        ],
-        "estimatedPh": "~2",
-        "classification": "Strong acid",
-        "image": "assets/practicum-U1.jpg"
-      },
-      {
-        "id": "U2",
-        "identity": "Black coffee",
-        "observedColour": "rose-pink",
-        "rgb": [
-          190,
-          70,
-          110
-        ],
-        "estimatedPh": "~5",
-        "classification": "Weak acid",
-        "image": "assets/practicum-U2.jpg"
-      },
-      {
-        "id": "U3",
-        "identity": "Salt water",
-        "observedColour": "violet",
-        "rgb": [
-          112,
-          94,
-          162
+          202,
+          124,
+          112
         ],
         "estimatedPh": "~7",
-        "classification": "Neutral",
-        "image": "assets/practicum-U3.jpg"
+        "classification": "Neutral"
       },
       {
-        "id": "U4",
-        "identity": "Baking soda solution",
-        "observedColour": "blue",
+        "id": "B",
+        "observedColour": "pink",
         "rgb": [
-          70,
-          118,
-          174
+          211,
+          103,
+          115
         ],
-        "estimatedPh": "~9",
-        "classification": "Weak alkali",
-        "image": "assets/practicum-U4.jpg"
+        "estimatedPh": "~3",
+        "classification": "Weak acid"
       },
       {
-        "id": "U5",
-        "identity": "Dilute ammonia (cleaner)",
-        "observedColour": "teal-green",
+        "id": "C",
+        "observedColour": "olive-green",
         "rgb": [
-          46,
-          150,
-          140
+          126,
+          95,
+          58
         ],
-        "estimatedPh": "~12",
-        "classification": "Strong alkali",
-        "image": "assets/practicum-U5.jpg"
+        "estimatedPh": "~8",
+        "classification": "Weak alkali"
+      },
+      {
+        "id": "D",
+        "observedColour": "muted pink",
+        "rgb": [
+          202,
+          124,
+          112
+        ],
+        "estimatedPh": "~7",
+        "classification": "Neutral"
+      },
+      {
+        "id": "E",
+        "observedColour": "deep red",
+        "rgb": [
+          185,
+          27,
+          29
+        ],
+        "estimatedPh": "~2",
+        "classification": "Strong acid"
+      },
+      {
+        "id": "F",
+        "observedColour": "amber-orange",
+        "rgb": [
+          185,
+          106,
+          1
+        ],
+        "estimatedPh": "~11",
+        "classification": "Strong alkali"
       }
     ]
   },
@@ -774,13 +775,13 @@
       "heading": "Group Optimisation",
       "narrative": [
         "Each pigment on its own has a weakness. Red cabbage covers the whole pH range, but the colour changes slowly in the middle, so it is hard to tell the exact pH between about pH 6 and 9. Onion skin also contains anthocyanins, so it responds across the same wide range, but its colours are duller and browner, so on its own it is harder to read than red cabbage. Purple sweet potato responds well too, but its purple tones in the middle of the range can look similar to red cabbage's own purple, so it does not add much there on its own. We mixed the three pigments together so that each one could cover for the others' weaknesses.",
-        "We tested a few different mixing ratios of red cabbage to onion to sweet potato before settling on 60:40:20. Other ratios gave muddier colours across the pH range, because the duller onion colours and the overlapping purple tones from sweet potato made red cabbage's clearer colour changes harder to see. The 60:40:20 ratio worked best. It keeps red cabbage as the main pigment, with just enough onion and sweet potato added to give a distinct blue-green cue at high pH without muddying the overall ladder too much, giving the clearest colour bands across acidic, neutral and alkaline solutions.",
-        "This 60:40:20 mixture is what we used for the rest of this site: the pH slider, the reference card and the AI pH Estimator are all based on this same set of colours."
+        "We tested a few different mixing ratios of red cabbage to onion to sweet potato before settling on 60:40:40. Other ratios gave muddier colours across the pH range, because the duller onion colours and the overlapping purple tones from sweet potato made red cabbage's clearer colour changes harder to see. The 60:40:40 ratio worked best. It keeps red cabbage as the main pigment, with equal smaller amounts of onion and sweet potato added to make the acidic, neutral and alkaline colour bands easier to compare.",
+        "This 60:40:40 mixture is what we used for the rest of this site: the pH slider, the reference card and the AI pH Estimator are all based on this same set of colours."
       ],
       "photos": [
         {
           "src": "assets/optimisation-photos/optimisation-01-combined-mixture.jpg",
-          "caption": "The combined 60:40:20 indicator mixture."
+          "caption": "The combined 60:40:40 indicator mixture."
         },
         {
           "src": "assets/optimisation-photos/optimisation-02-mixture-vs-individuals.jpg",
@@ -790,11 +791,11 @@
     },
     "discussion": {
       "heading": "Discussion and Conclusion",
-      "synthesis": "Our optimised 60:40:20 mix correctly identified all five unknown solutions in our Live Lab Practicum, from strong acid to strong alkali. This supports our main idea: a natural indicator, carefully optimised instead of just mixed randomly, can work as well as a man-made broad-range indicator. It does this while staying cheap, safe and made from things found at home.",
+      "synthesis": "Our optimised 60:40:40 mix classified all six coded solutions in our Live Lab Practicum, from strong acid to strong alkali, including two neutral samples. This supports our main idea: a natural indicator, carefully optimised instead of just mixed randomly, can show a useful colour range across acidic, neutral and alkaline solutions. It does this while staying cheap, safe and made from things found at home.",
       "strengths": [
         "Wide, visible colour range across almost the whole pH 1-13 scale.",
         "Cheap, safe and made entirely from things found at home.",
-        "Correctly identified all five unknown solutions in our practicum, from strong acid to strong alkali."
+        "Classified all six coded solutions in our practicum, from strong acid to strong alkali."
       ],
       "limitations": [
         "It is hard to tell weak acid from strong acid, or weak alkali from strong alkali, because the colour difference is small and hard to judge by eye.",
@@ -809,7 +810,7 @@
         "Set up the AI estimator separately for each camera or device, since cameras can show colours slightly differently."
       ]
     },
-    "aboutBuild": "Our class's usual AI policy for this project caps AI use at Level 2 (brainstorming and planning only). This site is an approved exception: our teacher signed off on this group building the maximum-AI arm of a class comparison, set alongside a Level 2 group, so the class can compare AI-assisted and human-produced coursework directly. The pH-colour calibration numbers shown throughout are illustrative and AI-generated for the demo, grounded in real indicator chemistry, and are not real laboratory measurements. Everything else on this site (group members, procedure photos, the 60:40:20 mixing ratio, and the literature citations) reflects our actual work."
+    "aboutBuild": "Our class's usual AI policy for this project caps AI use at Level 2 (brainstorming and planning only). This site is an approved exception: our teacher signed off on this group building the maximum-AI arm of a class comparison, set alongside a Level 2 group, so the class can compare AI-assisted and human-produced coursework directly. The smooth pH-colour calibration values used by the interactive slider and AI estimator are illustrative values made for the demo. The Live Lab RGB readings are our real colour-meter results. Everything else on this site, including the group members, procedure photos, 60:40:40 mixing ratio and literature citations, reflects our actual work."
   },
   };
 })(typeof window !== "undefined" ? window : globalThis);
