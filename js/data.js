@@ -3,7 +3,7 @@
 // URL, where script type=module loading itself is blocked — see color.js).
 // Plain classic script (not an ES module), loaded on demand by main.js.
 // Generated from the JSON files; keep them in sync if you edit either.
-// Regeneration command: see README.md Editing content.
+// Regeneration command: see README.md "Editing content".
 
 (function (global) {
   global.PH_DATA_FALLBACK = {
@@ -27,7 +27,7 @@
             "Hot water",
             "Filter paper or a fine sieve",
             "Solutions at pH 2, 4, 6, 7, 9, 11, 13",
-            "The three agreed common solutions (vinegar, NaCl salt solution, detergent)",
+            "The three agreed common solutions (vinegar, NaCl salt solution, soap powder solution)",
             "Small containers for testing",
             "Annex A colour-profiling app",
             "Camera or smartphone"
@@ -50,7 +50,7 @@
             "Chop red cabbage leaves finely to increase surface area for extraction.",
             "Steep the chopped cabbage in hot water for a fixed time to extract the anthocyanin pigment.",
             "Filter the extract to remove solid plant matter, keeping the coloured filtrate.",
-            "Add a fixed volume of extract to each solution (pH 2, 4, 6, 7, 9, 11, 13) and to the three agreed common solutions (vinegar, NaCl salt solution, detergent).",
+            "Add a fixed volume of extract to each solution (pH 2, 4, 6, 7, 9, 11, 13) and to the three agreed common solutions (vinegar, NaCl salt solution, soap powder solution).",
             "Profile the resulting colour with the Annex A colour-profiling app under consistent lighting to record RGB values.",
             "Repeat for reliability and record colour name and RGB at each pH."
           ],
@@ -80,7 +80,7 @@
           },
           {
             "src": "assets/peiyu-photos/peiyu-04-three-solutions.jpg",
-            "caption": "The extract added to the three agreed test solutions. Left: detergent (alkaline, green). Middle: NaCl salt solution (neutral, purple). Right: vinegar (acidic, pink)."
+            "caption": "The extract added to the three agreed test solutions. Left: soap powder solution (alkaline, green). Middle: NaCl salt solution (neutral, purple). Right: vinegar (acidic, pink)."
           },
           {
             "src": "assets/peiyu-photos/peiyu-05-three-solutions-2.jpg",
@@ -88,7 +88,7 @@
           },
           {
             "src": "assets/peiyu-photos/peiyu-06-green-purple-compare.jpg",
-            "caption": "Close-up comparing the extract's colour in detergent (left, green) and NaCl salt solution (right, purple)."
+            "caption": "Close-up comparing the extract's colour in soap powder solution (left, green) and NaCl salt solution (right, purple)."
           },
           {
             "src": "assets/peiyu-photos/peiyu-07-pink-result.jpg",
@@ -109,13 +109,13 @@
         },
         "literatureReview": {
           "focus": "Anthocyanins as natural pH indicators",
-          "summary": "Anthocyanins are blue, red, or purple pigments found in plants, especially flowers, fruits, and tubers. Anthocyanin appears as a red pigment in acidic conditions, while a blue pigment exists in alkaline conditions.",
+          "summary": "Khoo et al. explain that anthocyanins are water-soluble pigments responsible for red, purple and blue colours in many fruits, vegetables and flowers. The colour shown by an anthocyanin depends partly on the pH of its surroundings. In acidic conditions, anthocyanins usually appear red, while in alkaline conditions they shift towards blue. The paper also notes that different plants contain different types and amounts of anthocyanins, so the exact shade and colour strength can vary. Because the pigments dissolve in water, they can be extracted from plant material and used as natural colourants. This pH-sensitive behaviour means that an anthocyanin-rich plant may also act as a natural acid-alkali indicator. However, the observed colour can be affected by temperature, light, storage and pigment concentration, so fair tests require consistent conditions. Relation to our project: red cabbage was chosen as our main pigment because it contains anthocyanins and produced the widest, clearest colour range in our trials. The paper helped us predict red colours in acids and blue or green colours in alkalis. It also supports our decision to control extraction volume, lighting and the time before recording RGB values.",
           "citation": "Khoo, H. E., Azlan, A., Tang, S. T., & Lim, S. M. (2017). Anthocyanidins and anthocyanins: Colored pigments as food, pharmaceutical ingredients, and the potential health benefits. Food & Nutrition Research, 61(1), Article 1361779. https://doi.org/10.1080/16546628.2017.1361779"
         }
       },
       {
         "name": "Soh Kang Jay",
-        "plantKey": "Onion Skin",
+        "plantKey": "onion",
         "plant": "Onion",
         "pigment": "Anthocyanin Pigments",
         "planning": {
@@ -124,7 +124,7 @@
             "Hot water",
             "Filter paper or a fine sieve",
             "Solutions at pH 2, 4, 6, 7, 9, 11, 13",
-            "The three agreed common solutions (vinegar, NaCl salt solution, detergent)",
+            "The three agreed common solutions (vinegar, NaCl salt solution, soap powder solution)",
             "Small containers for testing",
             "Annex A colour-profiling app",
             "Camera or smartphone"
@@ -177,7 +177,7 @@
           },
           {
             "src": "assets/kang-jay-photos/kang-jay-04-three-solutions.jpg",
-            "caption": "The extract added to the three agreed test solutions. Left: detergent (alkaline, brown). Middle: NaCl salt solution (neutral, salmon-pink). Right: vinegar (acidic, red-orange)."
+            "caption": "The extract added to the three agreed test solutions. Left: soap powder solution (alkaline, brown). Middle: NaCl salt solution (neutral, salmon-pink). Right: vinegar (acidic, red-orange)."
           },
           {
             "src": "assets/kang-jay-photos/kang-jay-05-three-solutions-2.jpg",
@@ -206,7 +206,7 @@
         },
         "literatureReview": {
           "focus": "Anthocyanin pigment stability across pH",
-          "summary": "Anthocyanin pigments are used as natural food colorants. However, the color and stability of these pigments are influenced by pH among other factors. At acidic pH, anthocyanins are red pigments, and turn blue in basic mediums. However, at basic pH, anthocyanins are unstable and tend to degrade to dark brown oxidized compounds.",
+          "summary": "Mattioli et al. describe anthocyanins as water-soluble pigments found in many plant parts. They give plants red, purple and blue colours. Their colour is strongly affected by pH: acidic conditions make them redder, while alkaline conditions can shift them towards blue. The paper also explains that anthocyanin stability is affected by light, temperature, oxygen and the pigment's surroundings. In strongly alkaline conditions, the colour may become less stable and can turn dark brown as the pigment breaks down. This matters when an indicator is observed over time, because a later reading may not match the colour seen immediately after mixing. Relation to our project: onion skin contains anthocyanin pigments, so the paper gave us a scientific reason to test it as a natural pH indicator. Our onion extract changed from dull red in acid to muted purple and blue-grey tones, then olive-brown in strong alkali. The reported instability in alkaline conditions may explain the brownish high-pH colour. It also supports our choice to record each colour promptly and to keep lighting, temperature, solution volume, extract volume and waiting time constant.",
           "citation": "Mattioli, R., Francioso, A., Mosca, L., & Silva, P. (2020). Anthocyanins: A comprehensive review of their chemical properties and health effects on cardiovascular and neurodegenerative diseases. Molecules, 25(17), Article 3809. https://doi.org/10.3390/molecules25173809"
         }
       },
@@ -221,7 +221,7 @@
             "Hot water",
             "Filter paper or a fine sieve",
             "Solutions at pH 2, 4, 6, 7, 9, 11, 13",
-            "The three agreed common solutions (vinegar, NaCl salt solution, detergent)",
+            "The three agreed common solutions (vinegar, NaCl salt solution, soap powder solution)",
             "Small containers for testing",
             "Annex A colour-profiling app",
             "Camera or smartphone"
@@ -270,7 +270,7 @@
           },
           {
             "src": "assets/josiah-photos/josiah-10-detergent-result.jpg",
-            "caption": "The extract's colour in detergent, the alkaline test solution: green."
+            "caption": "The extract's colour in soap powder solution, the alkaline test solution: green."
           },
           {
             "src": "assets/josiah-photos/josiah-11-nacl-result.jpg",
@@ -282,7 +282,7 @@
           },
           {
             "src": "assets/josiah-photos/josiah-13-three-solutions-2.jpg",
-            "caption": "The three test results together. Left: detergent (green). Middle: NaCl salt solution (blue-teal). Right: vinegar (magenta)."
+            "caption": "The three test results together. Left: soap powder solution (green). Middle: NaCl salt solution (blue-teal). Right: vinegar (magenta)."
           }
         ],
         "evaluation": {
@@ -299,7 +299,7 @@
         },
         "literatureReview": {
           "focus": "Purple sweet potato anthocyanins",
-          "summary": "Purple sweet potato are sources of anthocyanin, a pigment that can show colour changes at different pH values. They show red colour at pH 1-2, pink at pH 3-6, purple at pH 7, blue at pH 8-9, green at pH 10-11, and yellow at pH 12-14.",
+          "summary": "Leba et al. investigated purple sweet potato pigment as an environmentally friendly acid-base indicator. The pigment contains anthocyanins and showed a broad sequence of colours across the pH scale: red at pH 1-2, pink at pH 3-6, purple at pH 7, blue at pH 8-9, green at pH 10-11 and yellow at pH 12-14. The researchers also found that the prepared indicator remained stable during their storage test and gave clear colour changes in acid-base titrations. They described it as affordable, easy to prepare and less harmful to the environment than some synthetic indicators. Relation to our project: these results gave us a scientific reason to choose purple sweet potato as one of our three plant pigments. The reported colour sequence helped us predict red or pink colours in acids, purple near neutral and blue or green colours in alkalis. Our own high-pH result was blue-green, which added useful contrast to the final mixture. The study used a different extraction method from our hot-water method, so we did not copy its colours directly. Instead, it showed why we needed to test our own extract and build a colour reference scale from our actual results.",
           "citation": "Leba, M. A. U., Boelan, E. G., Taek, M. M., Mau, S. D. B., Ruas, J. de C., Tukan, M. B., Ruas, A. de C., Ruas, N. A., Lawung, Y. D., Kopon, A. M., Komisia, F., & Baunsele, A. B. (2024). Exploring purple sweet potato pigment as an eco-friendly titration indicator for acid determination. Tropical Journal of Natural Product Research, 8(6), 7403–7409. https://doi.org/10.26538/tjnpr/v8i6.10"
         }
       }
@@ -319,7 +319,7 @@
       },
       {
         "role": "alkaline",
-        "solution": "Detergent",
+        "solution": "Soap powder solution",
         "approxPh": 9
       }
     ],
@@ -755,11 +755,11 @@
           "caption": "The fine salt we dissolved in water to make the NaCl test solution."
         },
         {
-          "name": "Detergent",
-          "product": "Dynamo Anti-Bacterial Liquid Detergent, 2.5 kg",
+          "name": "Soap powder solution",
+          "product": "Soap powder dissolved in water",
           "role": "Alkaline test solution",
-          "src": "assets/ingredient-photos/detergent.jpg",
-          "caption": "The liquid detergent we used as our alkaline test solution."
+          "src": "assets/ingredient-photos/soap-powder.jpg",
+          "caption": "The soap powder solution we used as our alkaline test solution."
         }
       ],
       "otherMaterials": [

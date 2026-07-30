@@ -2,7 +2,7 @@
   "commonSolutions": [
     { "role": "acidic", "solution": "Vinegar", "approxPh": 2.5 },
     { "role": "neutral", "solution": "NaCl salt solution", "approxPh": 7.0 },
-    { "role": "alkaline", "solution": "Detergent", "approxPh": 9.0 }
+    { "role": "alkaline", "solution": "Soap powder solution", "approxPh": 9.0 }
   ],
   "individual": {
     "cabbage": {

@@ -46,11 +46,11 @@
         "caption": "The fine salt we dissolved in water to make the NaCl test solution."
       },
       {
-        "name": "Detergent",
-        "product": "Dynamo Anti-Bacterial Liquid Detergent, 2.5 kg",
+        "name": "Soap powder solution",
+        "product": "Soap powder dissolved in water",
         "role": "Alkaline test solution",
-        "src": "assets/ingredient-photos/detergent.jpg",
-        "caption": "The liquid detergent we used as our alkaline test solution."
+        "src": "assets/ingredient-photos/soap-powder.jpg",
+        "caption": "The soap powder solution we used as our alkaline test solution."
       }
     ],
     "otherMaterials": [

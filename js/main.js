@@ -213,6 +213,32 @@ function renderMemberDataTable(points) {
   ]);
 }
 
+function renderMemberReferenceCard(member, points) {
+  return el('aside', { class: 'member-reference-card', 'aria-label': `${member.name}'s ${member.plant} colour reference card` }, [
+    el('div', { class: 'member-reference-card__header' }, [
+      el('p', { class: 'member-reference-card__eyebrow' }, 'Colour reference card'),
+      el('h4', {}, `${member.name}'s ${member.plant} Scale`),
+      el('p', {}, 'Compare an unknown solution with the closest swatch to estimate its pH.'),
+    ]),
+    el(
+      'div',
+      { class: 'member-reference-card__ladder' },
+      points.map((p) =>
+        el('div', { class: 'member-reference-card__step' }, [
+          el('div', {
+            class: 'member-reference-card__swatch',
+            style: `background:${rgbToHex(p.rgb)}`,
+            'aria-label': `${p.colourName} colour swatch`,
+          }),
+          el('strong', {}, `pH ${p.ph}`),
+          el('span', {}, p.colourName),
+          el('small', { class: 'mono' }, `RGB ${p.rgb.join(', ')}`),
+        ])
+      )
+    ),
+  ]);
+}
+
 function renderPhotoGallery(photos, size) {
   if (!photos || !photos.length) {
     return el('p', { class: 'hint' }, 'Photos pending.');
@@ -256,6 +282,7 @@ function renderTabPanel(member, calibration) {
   const results = el('div', {}, [
     el('h3', { class: 'section__subheading', style: 'margin-top:0' }, 'Results'),
     points.length ? renderMemberDataTable(points) : null,
+    member.plantKey === 'onion' && points.length ? renderMemberReferenceCard(member, points) : null,
     el('p', { html: member.analysis }),
     el('h4', {}, 'Photos'),
     renderPhotoGallery(member.photos),
