@@ -316,11 +316,6 @@ input[type="range"] { width: 100%; }
   color: var(--ink-faint);
   margin-bottom: 0.4rem;
 }
-.lit-card__focus {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  margin-bottom: 0.6rem;
-}
 .lit-card__summary { color: var(--ink-soft); font-size: 0.95rem; }
 .lit-card__citation {
   margin-top: 0.9rem;

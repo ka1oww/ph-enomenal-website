@@ -615,11 +615,11 @@
         {
           "ph": 13,
           "band": "strong alkali",
-          "colourName": "olive-yellow",
+          "colourName": "yellow",
           "rgb": [
-            150,
-            180,
-            84
+            185,
+            106,
+            1
           ]
         }
       ]
@@ -684,7 +684,7 @@
       },
       {
         "id": "F",
-        "observedColour": "amber-orange",
+        "observedColour": "yellow",
         "rgb": [
           185,
           106,

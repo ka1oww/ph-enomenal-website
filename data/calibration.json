@@ -62,7 +62,7 @@
       { "ph": 7, "band": "neutral", "colourName": "violet", "rgb": [110, 92, 165] },
       { "ph": 9, "band": "weak alkali", "colourName": "blue", "rgb": [66, 116, 176] },
       { "ph": 11, "band": "strong alkali", "colourName": "teal-green", "rgb": [44, 152, 138] },
-      { "ph": 13, "band": "strong alkali", "colourName": "olive-yellow", "rgb": [150, 180, 84] }
+      { "ph": 13, "band": "strong alkali", "colourName": "yellow", "rgb": [185, 106, 1] }
     ]
   }
 }

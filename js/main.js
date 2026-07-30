@@ -112,7 +112,6 @@ function renderIntroduction(data) {
     ...members.members.map((m) =>
       el('div', { class: 'lit-card' }, [
         el('p', { class: 'lit-card__member' }, `${m.name} (${m.plant})`),
-        el('h4', { class: 'lit-card__focus' }, m.literatureReview.focus),
         el('p', { class: 'lit-card__summary' }, m.literatureReview.summary),
         el('p', { class: 'lit-card__citation' }, m.literatureReview.citation),
       ])
