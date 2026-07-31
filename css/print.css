@@ -15,7 +15,7 @@
     padding: 0;
   }
 
-  .site-header, .site-footer, .hero, .no-print { display: none !important; }
+  .site-header, .hero, .no-print { display: none !important; }
 
   .reference-card {
     box-shadow: none;

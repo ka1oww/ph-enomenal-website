@@ -1029,15 +1029,6 @@ table.results-table th { color: var(--ink-faint); font-weight: 600; font-size: 0
   background: var(--violet);
 }
 
-/* ---------- footer ---------- */
-
-.site-footer {
-  background: var(--ink);
-  color: rgba(251, 249, 244, 0.7);
-  padding: 2rem 1.5rem;
-}
-.site-footer__inner { max-width: var(--wide-width); margin: 0 auto; font-size: 0.85rem; }
-
 /* ---------- utility ---------- */
 
 @media print {

@@ -504,12 +504,6 @@ function renderDiscussion(data) {
   document.getElementById('discussionRecommendations').replaceChildren(...content.discussion.recommendations.map((s) => el('li', {}, s)));
 }
 
-// ---------- footer ----------
-
-function renderFooter(data) {
-  setText('aboutBuildNote', data.content.aboutBuild);
-}
-
 // ---------- nav ----------
 
 function initNav() {
@@ -566,8 +560,6 @@ async function init() {
   renderReferenceCard(data);
   renderPracticum(data);
   renderDiscussion(data);
-  renderFooter(data);
-
   initNav();
   initScrollReveal();
   initSlider(data.calibration);

@@ -108,6 +108,5 @@
       "Try adding a fourth pigment that changes colour through a different mechanism (not anthocyanins), to add more contrast and fix the weak colour separation around pH 5-6.",
       "Set up the AI estimator separately for each camera or device, since cameras can show colours slightly differently."
     ]
-  },
-  "aboutBuild": "Our class's usual AI policy for this project caps AI use at Level 2 (brainstorming and planning only). This site is an approved exception: our teacher signed off on this group building the maximum-AI arm of a class comparison, set alongside a Level 2 group, so the class can compare AI-assisted and human-produced coursework directly. The pH-colour calibration used by the interactive slider and AI estimator follows our final 60:40:40 reference card. The Live Lab RGB readings are our real colour-meter results. Everything else on this site, including the group members, procedure photos, 60:40:40 mixing ratio and literature citations, reflects our actual work. The lemon juice and baking soda ingredient images are illustrative."
+  }
 }
