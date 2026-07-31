@@ -218,29 +218,31 @@ function renderMemberDataTable(points) {
   ]);
 }
 
-function renderMemberReferenceCard(member, points) {
+function renderMemberReferenceCard(member, results) {
   return el('aside', { class: 'member-reference-card', 'aria-label': `${member.name}'s ${member.plant} colour reference card` }, [
     el('div', { class: 'member-reference-card__header' }, [
-      el('p', { class: 'member-reference-card__eyebrow' }, 'Colour reference card'),
-      el('h4', {}, `${member.name}'s ${member.plant} Scale`),
-      el('p', {}, 'Compare an unknown solution with the closest swatch to estimate its pH.'),
+      el('p', { class: 'member-reference-card__eyebrow' }, 'Observed results'),
+      el('h4', {}, `${member.name}'s ${member.plant} Colour Reference Card`),
+      el('p', {}, 'Based on the colours produced in our live tests with vinegar, NaCl salt solution and soap powder solution.'),
     ]),
     el(
       'div',
       { class: 'member-reference-card__ladder' },
-      points.map((p) =>
+      results.map((result) =>
         el('div', { class: 'member-reference-card__step' }, [
-          el('div', {
-            class: 'member-reference-card__swatch',
-            style: `background:${rgbToHex(p.rgb)}`,
-            'aria-label': `${p.colourName} colour swatch`,
+          el('img', {
+            class: 'member-reference-card__photo',
+            src: result.image,
+            alt: `${member.plant} extract in ${result.solution}, producing a ${result.colourName} colour`,
+            loading: 'lazy',
           }),
-          el('strong', {}, `pH ${p.ph}`),
-          el('span', {}, p.colourName),
-          el('small', { class: 'mono' }, `RGB ${p.rgb.join(', ')}`),
+          el('strong', {}, result.classification),
+          el('span', {}, result.solution),
+          el('small', {}, `Observed colour: ${result.colourName}`),
         ])
       )
     ),
+    el('p', { class: 'member-reference-card__note' }, 'These are our actual observed colours. Exact pH and RGB values were not measured for this test.'),
   ]);
 }
 
@@ -268,6 +270,7 @@ function renderPhotoGallery(photos, size) {
 
 function renderTabPanel(member, calibration) {
   const points = calibration.individual[member.plantKey]?.points || [];
+  const observedResults = calibration.individual[member.plantKey]?.observedResults || [];
   const planning = member.planning;
 
   const materialsMethods = el('div', {}, [
@@ -291,8 +294,11 @@ function renderTabPanel(member, calibration) {
 
   const results = el('div', {}, [
     el('h3', { class: 'section__subheading', style: 'margin-top:0' }, 'Results'),
-    points.length ? renderMemberDataTable(points) : null,
-    member.plantKey === 'onion' && points.length ? renderMemberReferenceCard(member, points) : null,
+    member.plantKey === 'onion' && observedResults.length
+      ? renderMemberReferenceCard(member, observedResults)
+      : points.length
+        ? renderMemberDataTable(points)
+        : null,
     el('p', { html: member.analysis }),
     el('h4', {}, 'Photos'),
     renderPhotoGallery(member.photos),

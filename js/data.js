@@ -410,6 +410,26 @@
         "member": "Soh Kang Jay",
         "plant": "Red Onion Skin",
         "pigment": "Anthocyanins",
+        "observedResults": [
+          {
+            "classification": "Acidic",
+            "solution": "Vinegar",
+            "colourName": "red-orange",
+            "image": "assets/kang-jay-results/vinegar-acidic.jpg"
+          },
+          {
+            "classification": "Neutral",
+            "solution": "NaCl salt solution",
+            "colourName": "salmon-pink",
+            "image": "assets/kang-jay-results/nacl-neutral.jpg"
+          },
+          {
+            "classification": "Alkaline",
+            "solution": "Soap powder solution",
+            "colourName": "brown",
+            "image": "assets/kang-jay-results/soap-powder-alkaline.jpg"
+          }
+        ],
         "points": [
           {
             "ph": 2,

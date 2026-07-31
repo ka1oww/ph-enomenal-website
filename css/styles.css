@@ -527,7 +527,7 @@ table.data-table th { color: var(--ink-faint); font-weight: 600; font-size: 0.78
 }
 .member-reference-card__ladder {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .member-reference-card__step {
   padding: 0.9rem 0.75rem 1rem;
@@ -535,9 +535,12 @@ table.data-table th { color: var(--ink-faint); font-weight: 600; font-size: 0.78
   border-right: 1px solid rgba(89, 66, 44, 0.08);
   text-align: center;
 }
-.member-reference-card__swatch {
-  height: 54px;
+.member-reference-card__photo {
+  display: block;
+  width: 100%;
+  height: 170px;
   margin-bottom: 0.55rem;
+  object-fit: cover;
   border: 1px solid rgba(35, 32, 29, 0.14);
   border-radius: var(--radius-sm);
 }
@@ -551,18 +554,26 @@ table.data-table th { color: var(--ink-faint); font-weight: 600; font-size: 0.78
   font-size: 1.05rem;
 }
 .member-reference-card__step span {
-  min-height: 2.5em;
+  min-height: 1.5em;
   color: var(--ink-soft);
-  font-size: 0.73rem;
+  font-size: 0.78rem;
   line-height: 1.25;
 }
 .member-reference-card__step small {
   margin-top: 0.35rem;
   color: var(--ink-faint);
-  font-size: 0.6rem;
+  font-size: 0.68rem;
+}
+.member-reference-card__note {
+  margin: 0;
+  padding: 0.75rem 1.2rem 0.9rem;
+  border-top: 1px dashed #cfbea5;
+  color: var(--ink-soft);
+  font-size: 0.76rem;
 }
 @media (max-width: 520px) {
-  .member-reference-card__ladder { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .member-reference-card__ladder { grid-template-columns: 1fr; }
+  .member-reference-card__photo { height: 200px; }
 }
 
 .evaluation-box {
