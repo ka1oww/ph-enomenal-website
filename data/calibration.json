@@ -1,7 +1,9 @@
 {
   "commonSolutions": [
+    { "role": "acidic", "solution": "Lemon juice", "approxPh": 2.0 },
     { "role": "acidic", "solution": "Vinegar", "approxPh": 2.5 },
     { "role": "neutral", "solution": "NaCl salt solution", "approxPh": 7.0 },
+    { "role": "weak alkaline", "solution": "Baking soda solution", "approxPh": 8.5 },
     { "role": "alkaline", "solution": "Soap powder solution", "approxPh": 9.0 }
   ],
   "individual": {
@@ -21,7 +23,7 @@
     },
     "onion": {
       "member": "Soh Kang Jay",
-      "plant": "Onion",
+      "plant": "Red Onion Skin",
       "pigment": "Anthocyanins",
       "points": [
         { "ph": 2, "colourName": "dull brick red", "rgb": [178, 68, 58] },
@@ -49,20 +51,27 @@
     }
   },
   "mixture": {
-    "ratioLabel": "red cabbage : onion : sweet potato = 60 : 40 : 40 (3 : 2 : 2)",
+    "ratioLabel": "red cabbage : red onion skin : sweet potato = 60 : 40 : 40 (3 : 2 : 2)",
     "ratioTested": [
       { "ratio": "40 : 40 : 20", "verdict": "muddier mid-range separation" },
       { "ratio": "40 : 20 : 40", "verdict": "muddier mid-range separation" },
       { "ratio": "60 : 40 : 40", "verdict": "cleanest distinct bands across all three pH regions (winner)" }
     ],
     "points": [
-      { "ph": 1, "band": "strong acid", "colourName": "red", "rgb": [205, 30, 55] },
+      { "ph": 1, "band": "strong acid", "colourName": "crimson red", "rgb": [205, 30, 55] },
+      { "ph": 2, "band": "strong acid", "colourName": "raspberry red", "rgb": [200, 47, 91] },
       { "ph": 3, "band": "strong/weak acid", "colourName": "rose-pink", "rgb": [196, 58, 104] },
+      { "ph": 4, "band": "weak acid", "colourName": "raspberry mauve", "rgb": [173, 62, 121] },
       { "ph": 5, "band": "weak acid", "colourName": "purple-magenta", "rgb": [158, 66, 138] },
+      { "ph": 6, "band": "weak acid", "colourName": "lavender purple", "rgb": [130, 81, 152] },
       { "ph": 7, "band": "neutral", "colourName": "violet", "rgb": [110, 92, 165] },
-      { "ph": 9, "band": "weak alkali", "colourName": "blue", "rgb": [66, 116, 176] },
+      { "ph": 8, "band": "weak alkali", "colourName": "periwinkle blue", "rgb": [88, 108, 178] },
+      { "ph": 9, "band": "weak alkali", "colourName": "blue", "rgb": [66, 122, 176] },
+      { "ph": 10, "band": "weak alkali", "colourName": "blue-green", "rgb": [54, 146, 147] },
       { "ph": 11, "band": "strong alkali", "colourName": "teal-green", "rgb": [44, 152, 138] },
-      { "ph": 13, "band": "strong alkali", "colourName": "yellow", "rgb": [185, 106, 1] }
+      { "ph": 12, "band": "strong alkali", "colourName": "olive green", "rgb": [115, 168, 70] },
+      { "ph": 13, "band": "strong alkali", "colourName": "amber-yellow", "rgb": [185, 106, 1] },
+      { "ph": 14, "band": "strong alkali", "colourName": "mustard yellow / golden ochre", "rgb": [199, 168, 0] }
     ]
   }
 }

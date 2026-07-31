@@ -113,6 +113,12 @@ function renderIntroduction(data) {
       el('div', { class: 'lit-card' }, [
         el('p', { class: 'lit-card__member' }, `${m.name} (${m.plant})`),
         el('p', { class: 'lit-card__summary' }, m.literatureReview.summary),
+        m.literatureReview.relation
+          ? el('p', { class: 'lit-card__relation' }, [
+              el('strong', {}, 'Relation to our project: '),
+              m.literatureReview.relation,
+            ])
+          : null,
         el('p', { class: 'lit-card__citation' }, m.literatureReview.citation),
       ])
     )
@@ -248,7 +254,12 @@ function renderPhotoGallery(photos, size) {
     { class: galleryClass },
     photos.map((p) =>
       el('figure', { class: 'photo-gallery__item' }, [
-        el('img', { src: p.src, alt: p.caption, loading: 'lazy' }),
+        el('img', {
+          src: p.src,
+          alt: p.caption,
+          loading: 'lazy',
+          class: p.crop ? `photo-gallery__crop photo-gallery__crop--${p.crop}` : '',
+        }),
         el('figcaption', {}, p.caption),
       ])
     )
@@ -401,9 +412,9 @@ function renderOptimisation(data) {
 // ---------- reference card ----------
 
 function renderReferenceCard(data) {
-  const { calibration, members } = data;
-  setText('referenceCardTitle', `Master Scale: ${calibration.mixture.ratioLabel}`);
-  setText('referenceCardGroup', members.groupName);
+  const { calibration } = data;
+  setText('referenceCardTitle', 'Final 60:40:40 Indicator Scale');
+  setText('referenceCardGroup', 'Our final reference card for the optimised 60:40:40 indicator, from pH 1 to pH 14.');
 
   const ladder = document.getElementById('referenceCardLadder');
   ladder.replaceChildren(
@@ -412,6 +423,7 @@ function renderReferenceCard(data) {
         el('div', { class: 'ladder-block__swatch', style: `background:${rgbToHex(p.rgb)}` }),
         el('div', { class: 'ladder-block__ph' }, `pH ${p.ph}`),
         el('div', { class: 'ladder-block__band' }, p.band),
+        el('div', { class: 'ladder-block__name' }, p.colourName),
         el('div', { class: 'ladder-block__hex mono' }, rgbToHex(p.rgb).toUpperCase()),
       ])
     )
